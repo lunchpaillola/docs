@@ -39,6 +39,7 @@
       "url": "adalo"
     }
   ],
+
   "anchors": [],
   "navigation": [
     {
@@ -46,26 +47,31 @@
       "pages": ["introduction"]
     },
     {
-      "group": "Add-ons",
+      "group": "Welcome",
+      "pages": ["bubble/introduction", "adalo/introduction"]
+    },
+    {
+      "group": "Plugins",
       "pages": [
-        "bubble/introduction",
-        "bubble",
         {
-          "group": "Daily plugin",
+          "group": "Daily Plugin",
           "pages": ["bubble/daily/getting-started"]
         },
         {
-          "group": "Multiplayer plugin",
+          "group": "Multiplayer Plugin",
           "pages": ["bubble/multiplayer/getting-started"]
-        },
-        "adalo/introduction",
-        "adalo",
+        }
+      ]
+    },
+    {
+      "group": "Components",
+      "pages": [
         {
-          "group": "Daily component",
+          "group": "Daily Component",
           "pages": ["adalo/daily/getting-started"]
         },
         {
-          "group": "Talk JS component",
+          "group": "TalkJS Component",
           "pages": ["adalo/talkjs/getting-started"]
         }
       ]
