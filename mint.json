@@ -1,91 +1,79 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Docs",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#1f2de6",
+    "light": "#8b9dff",
+    "dark": "#1f2de6",
     "anchors": {
-      "from": "#0D9373",
+      "from": "#8b9dff",
       "to": "#07C983"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "mailto:help@lunchpaillabs.com"
     },
     {
       "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://lunchpaillabs.com/blog"
     }
   ],
+  "topbarCtaButton": {
+    "name": "Home",
+    "url": "https://lunchpaillabs.com"
+  },
+  "tabs": [
+    {
+      "name": "Bubble",
+      "url": "bubble"
+    },
+    {
+      "name": "Adalo",
+      "url": "adalo"
+    }
+  ],
+  "anchors": [],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "group": "",
+      "pages": ["Introduction"]
     },
     {
-      "group": "Essentials",
+      "group": "Add-ons",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "bubble/introduction",
+        "bubble",
+        {
+          "group": "Daily plugin",
+          "pages": ["bubble/daily/getting-started"]
+        },
+        {
+          "group": "Multiplayer plugin",
+          "pages": ["bubble/multiplayer/getting-started"]
+        },
+        "adalo/introduction",
+        "adalo",
+        {
+          "group": "Daily component",
+          "pages": ["adalo/daily/getting-started"]
+        },
+        {
+          "group": "Talk JS component",
+          "pages": ["adalo/talkjs/getting-started"]
+        }
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/lunchpaillabs",
+    "github": "https://github.com/lunchpaillola",
+    "linkedin": "https://www.linkedin.com/company/lunchpaillabs"
   }
 }
