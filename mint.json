@@ -42,8 +42,8 @@
   "anchors": [],
   "navigation": [
     {
-      "group": "",
-      "pages": ["Introduction"]
+      "group": "Welcome",
+      "pages": ["introduction"]
     },
     {
       "group": "Add-ons",
