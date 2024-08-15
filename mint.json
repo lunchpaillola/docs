@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Docs",
+  "name": "Add-ons",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -14,6 +14,9 @@
       "from": "#8b9dff",
       "to": "#07C983"
     }
+  },
+  "primaryTab": {
+    "name": "Welcome"
   },
   "topbarLinks": [
     {
@@ -39,12 +42,10 @@
       "url": "adalo"
     }
   ],
-
-  "anchors": [],
   "navigation": [
     {
-      "group": "Welcome",
-      "pages": ["welcome"]
+      "group": "Start here",
+      "pages": ["introduction", "bubble/overview", "adalo/overview"]
     },
     {
       "group": "Plugins",
