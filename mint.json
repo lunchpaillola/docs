@@ -44,7 +44,7 @@
   "navigation": [
     {
       "group": "Welcome",
-      "pages": ["add-ons-by-lpl"]
+      "pages": ["welcome"]
     },
     {
       "group": "Plugins",
