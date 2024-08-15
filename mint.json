@@ -54,6 +54,10 @@
       "group": "Plugins",
       "pages": [
         {
+          "group": "SmartSuite plugin",
+          "pages": ["bubble/smartsuite/getting-started"]
+        },
+        {
           "group": "Daily Plugin",
           "pages": ["bubble/daily/getting-started"]
         },
