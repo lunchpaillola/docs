@@ -1,0 +1,47 @@
+---
+description: "Getting started with the TalkJS Chat component for Adalo."
+---
+
+# Getting Started with TalkJS Chat Component
+
+## Overview
+
+This component brings chat functionality to Adalo apps, leveraging the sophisticated chat UIs and APIs from TalkJS. Proudly developed and maintained by [Lunch Pail Labs](https://lunchpaillabs.com/), it's designed to seamlessly integrate into your app's environment. To see this component in action, visit our demo: [link](https://lunchpaillabs.adalo.com/chat-demo-2).
+
+---
+
+## Installation and Configuration
+
+### Prerequisites
+
+Before starting, ensure you have:
+
+- An Adalo app with users eligible for adding to conversations.
+- A TalkJS account. Here's what you'll need:
+  - Your App ID, available in [your dashboard](https://talkjs.com/dashboard/) under the settings tab.
+  - To customize the Chat UI, adjust settings at [Chat UI settings](https://talkjs.com/dashboard/roles/settings/default/chat-ui) and assign roles appropriately through your dashboard.
+
+### Installation
+
+1. From the Adalo component library, drag and drop the chat component onto your app screen.
+2. Input your TalkJS App ID into the component settings.
+
+### Adding Participants
+
+- **"Me" parameter**: Essential for the component's functionality, this parameter identifies the user entering the chat.
+- **Adding other participants**: To include more people in a conversation, provide a list of users in the 'participant' parameter. Specify their details like ID, Email, Photo, or Role. For a sample database setup, you can clone the [chat demo](https://lunchpaillabs.adalo.com/chat-demo-2).
+
+  ![Screenshot 2024-01-09 at 1.00.27 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/480f0932-72ea-496f-a70d-3632da8d6e99/7433c4a9-cc52-4dfb-b93a-1efa5d9a3719/Screenshot_2024-01-09_at_1.00.27_PM.png)
+
+- **Default view**: Without added participants, the component defaults to the inbox view, displaying all conversations involving the user, and will be empty if there are no conversations.
+
+<CardGroup cols={1}>
+  <Card
+    title="Need help of have a request?"
+    icon="envelope"
+    href="mailto:help@lunchpaillabs.com"
+  >
+    Send us an email at help@lunchpaillabs.com for any questions or support
+    related to the add-on!
+  </Card>
+</CardGroup>

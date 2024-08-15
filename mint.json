@@ -44,22 +44,25 @@
   "navigation": [
     {
       "group": "Welcome",
-      "pages": ["introduction"]
-    },
-    {
-      "group": "Welcome",
-      "pages": ["bubble/introduction", "adalo/introduction"]
+      "pages": ["add-ons-by-lpl"]
     },
     {
       "group": "Plugins",
       "pages": [
         {
           "group": "SmartSuite plugin",
-          "pages": ["bubble/smartsuite/getting-started"]
+          "pages": [
+            "bubble/smartsuite/getting-started",
+            "bubble/smartsuite/plugin-reference",
+            "bubble/smartsuite/changelog"
+          ]
         },
         {
           "group": "Daily Plugin",
-          "pages": ["bubble/daily/getting-started"]
+          "pages": [
+            "bubble/daily/getting-started",
+            "bubble/daily/plugin-reference"
+          ]
         },
         {
           "group": "Multiplayer Plugin",
@@ -72,11 +75,17 @@
       "pages": [
         {
           "group": "Daily Component",
-          "pages": ["adalo/daily/getting-started"]
+          "pages": [
+            "adalo/daily/getting-started",
+            "adalo/daily/component-reference"
+          ]
         },
         {
           "group": "TalkJS Component",
-          "pages": ["adalo/talkjs/getting-started"]
+          "pages": [
+            "adalo/talkjs/getting-started",
+            "adalo/talkjs/component-reference"
+          ]
         }
       ]
     }
