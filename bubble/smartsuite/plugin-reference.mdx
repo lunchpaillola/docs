@@ -1,50 +1,66 @@
 ---
-description: "Detailed reference for all actions and API calls available in the SmartSuite Plugin."
+description: "Reference for all actions available in the SmartSuite Plugin."
 ---
 
-### Plugin Components
-
-The SmartSuite plugin is made up of various components that help you manage your workspace, solutions, tables (apps), and records effectively. Below are the detailed sections for API calls and actions available within the plugin.
-
-### Plugin API Calls
-
-These are the API calls available within the SmartSuite plugin, allowing you to interact programmatically with the SmartSuite platform.
-
-| **API Call**                    | **Description**                                                    |
-| ------------------------------- | ------------------------------------------------------------------ |
-| **List Workspace Members**      | Retrieves a list of all members within the workspace.              |
-| **List Solutions**              | Lists all solutions available in the workspace.                    |
-| **List Specific Solutions**     | Retrieves details of a specific solution in the workspace.         |
-| **List All Tables (Apps)**      | Lists all tables (apps) within a specified solution.               |
-| **Return Specific Table (App)** | Retrieves details of a specific table (app) within a solution.     |
-| **Fetch Record Structure**      | Retrieves the structure of a record within a specific table (app). |
-| **List Records**                | Retrieves a list of records from a specific table (app).           |
+import smartsuiteFooter from "/snippets/smartsuiteFooter.mdx";
 
 ### Plugin Actions
 
-These are the actions available within the SmartSuite plugin, allowing you to perform operations on records.
+The SmartSuite plugin offers actions to help you manage records within your Bubble app. Here’s a breakdown of what you can do:
 
-| **Action**            | **Description**                                                     |
-| --------------------- | ------------------------------------------------------------------- |
-| **Create a Record**   | Automates the creation of a new record in a specific table (app).   |
-| **Retrieve a Record** | Retrieves a specific record from a table (app) based on its ID.     |
-| **Update a Record**   | Updates an existing record with new data in a specific table (app). |
-| **Delete a Record**   | Deletes a specified record from a table (app).                      |
+#### **Fetch Record Structure**
+
+**Description:** Capture the data structure of records to properly display them in your app.
+
+| **Parameter** | **Description**                                 |
+| ------------- | ----------------------------------------------- |
+| **Table ID**  | The unique identifier for the SmartSuite table. |
+
+#### **List Records**
+
+**Description:** Retrieve and list records from a SmartSuite table directly within Bubble.
+
+| **Parameter** | **Description**                                 |
+| ------------- | ----------------------------------------------- |
+| **Table ID**  | The unique identifier for the SmartSuite table. |
+
+#### **Create a Record**
+
+**Description:** Automate the creation of new records in a specific table (app).
+
+| **Parameter**   | **Description**                                       |
+| --------------- | ----------------------------------------------------- |
+| **Table ID**    | The unique identifier for the SmartSuite table.       |
+| **Record Data** | A JSON object containing the data for the new record. |
+
+#### **Retrieve a Record**
+
+**Description:** Fetch a specific record by its ID from any table (app).
+
+| **Parameter** | **Description**                                  |
+| ------------- | ------------------------------------------------ |
+| **Table ID**  | The unique identifier for the SmartSuite table.  |
+| **Record ID** | The unique identifier of the record to retrieve. |
+
+#### **Update a Record**
+
+**Description:** Modify an existing record with updated information in a specific table (app).
+
+| **Parameter**   | **Description**                                 |
+| --------------- | ----------------------------------------------- |
+| **Table ID**    | The unique identifier for the SmartSuite table. |
+| **Record ID**   | The unique identifier of the record to update.  |
+| **Update Data** | A JSON object containing the updated data.      |
+
+#### **Delete a Record**
+
+**Description:** Remove a specific record from any table (app) with ease.
+
+| **Parameter** | **Description**                                 |
+| ------------- | ----------------------------------------------- |
+| **Table ID**  | The unique identifier for the SmartSuite table. |
+| **Record ID** | The unique identifier of the record to delete.  |
 
 ---
 
-<CardGroup cols={2}>
-  <Card title="Need Help?" icon="envelope" href="mailto:help@lunchpaillabs.com">
-    Send an email to help@lunchpaillabs.com.
-  </Card>
-  <Card
-    title="Have a feature request?"
-    icon="lightbulb"
-    href="https://lunchpaillabs.canny.io/feature-requests?selectedCategory=smartsuite-plugin-for-bubble"
-  >
-    Post your feature request on our{" "}
-    <a href="https://lunchpaillabs.canny.io/feature-requests?selectedCategory=smartsuite-plugin-for-bubble">
-      idea board.
-    </a>
-  </Card>
-</CardGroup>
+<smartsuiteFooter />

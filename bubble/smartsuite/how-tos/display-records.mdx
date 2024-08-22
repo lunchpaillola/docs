@@ -2,37 +2,35 @@
 title: "How to display records"
 ---
 
+import smartsuiteFooter from "/snippets/smartsuiteFooter.mdx";
+
 Once you have the record structure set up, you can display SmartSuite records in your Bubble app. This guide will walk you through the process.
 
 ## Steps
 
 1. **Create a New Page**
 
-   - Add a repeating group to the page.
-   - Refer to the video demonstration: [Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/480f0932-72ea-496f-a70d-3632da8d6e99/bcc2a1d2-095e-4d98-8545-ad58bd90c53c/Untitled.mp4).
+   - Add a repeating group to the page for listing the records.
+   - Refer to the [demo setup for an example](https://bubble.io/page?id=smartsuite&tab=tabs-1&name=display-records&type=page).
 
 2. **Set the Data Type**
 
-   - Set the data type to the one you defined (if you haven’t imported the data format yet, refer back to the “Get the Record Structure” guide).
-   - ![Data Type Example](https://prod-files-secure.s3.us-west-2.amazonaws.com/480f0932-72ea-496f-a70d-3632da8d6e99/b7fa0604-cc6b-41dd-a1f9-eb973d6d8870/CleanShot_2023-11-29_at_20.10.042x.png)
+   - Set the data type to the one you defined (if you haven’t imported the data format yet, refer back to the [Get the Record Structure](/bubble/smartsuite/how-tos/get-record-structure) guide).
+   - ![Example workflow](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c69fe6388be8756feaf4e4_CleanShot%202024-08-21%20at%2022.12.46%402x.png)
 
-3. **Add Content to Repeating Group**
-
-   - Add a text element to the repeating group and set the content to the data type’s title.
-   - Refer to the video demonstration: [Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/480f0932-72ea-496f-a70d-3632da8d6e99/d51194c9-2864-4562-99a5-7dd736feb8a6/Untitled.mp4).
-
-4. **Set Up the Workflow**
-
-   - Add a workflow on page load to fetch the data. Ensure you use the same “Table ID” that you used for the format imported into Bubble.
-   - ![Workflow Example](https://prod-files-secure.s3.us-west-2.amazonaws.com/480f0932-72ea-496f-a70d-3632da8d6e99/ae5778b1-ced4-4a7b-a943-6620110bde09/CleanShot_2023-11-29_at_20.21.482x.png)
-
-5. **Display the Data**
+3. **Display the Data**
 
    - Add an action to display the fetched data in the repeating group.
    - ![Display Data Example](https://prod-files-secure.s3.us-west-2.amazonaws.com/480f0932-72ea-496f-a70d-3632da8d6e99/c1ac321d-2c9d-4842-b05a-be505d51c376/CleanShot_2023-11-29_at_20.27.592x.png)
 
-6. **Preview the Results**
+4. **Add Content to Repeating Group**
+
+   - Add a text element to the repeating group and set the content to the data type’s title.
+   - Refer to the [demo setup for an example](https://bubble.io/page?id=smartsuite&tab=tabs-1&name=display-records&type=page).
+
+5. **Preview the Results**
    - Hit preview to see the records display.
+   - ![Preview](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c6a1fa9188fa86d735f76f_CleanShot%202024-08-21%20at%2022.21.47%402x.png)
 
 ---
 
@@ -40,18 +38,4 @@ Once you have the record structure set up, you can display SmartSuite records in
 
 Now that you've successfully displayed records, explore more advanced features of the SmartSuite plugin through our [Plugin Reference](/bubble/smartsuite/plugin-reference).
 
-<CardGroup cols={2}>
-  <Card title="Need Help?" icon="envelope" href="mailto:help@lunchpaillabs.com">
-    Send an email to help@lunchpaillabs.com.
-  </Card>
-  <Card
-    title="Have a feature request?"
-    icon="lightbulb"
-    href="https://lunchpaillabs.canny.io/feature-requests?selectedCategory=smartsuite-plugin-for-bubble"
-  >
-    Post your feature request on our{" "}
-    <a href="https://lunchpaillabs.canny.io/feature-requests?selectedCategory=smartsuite-plugin-for-bubble">
-      idea board.
-    </a>
-  </Card>
-</CardGroup>
+<smartsuiteFooter />
