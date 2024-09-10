@@ -21,7 +21,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:help@lunchpaillabs.com"
+      "url": "support"
     },
     {
       "name": "Blog",
@@ -40,12 +40,21 @@
     {
       "name": "Adalo",
       "url": "adalo"
+    },
+    {
+      "name": "Support",
+      "url": "support"
     }
   ],
   "navigation": [
     {
       "group": "Start here",
-      "pages": ["introduction", "bubble/overview", "adalo/overview"]
+      "pages": [
+        "introduction",
+        "bubble/overview",
+        "adalo/overview",
+        "support/overview"
+      ]
     },
     {
       "group": "Plugins",
