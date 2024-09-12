@@ -21,7 +21,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "https://addons.lunchpaillabs.com/support/overview"
+      "url": "https://addons.lunchpaillabs.com/support/plans"
     },
     {
       "name": "Account",
@@ -52,12 +52,12 @@
   ],
   "navigation": [
     {
-      "group": "Start here",
+      "group": "Add-ons",
       "pages": [
         "introduction",
         "bubble/overview",
         "adalo/overview",
-        "support/overview"
+        "support/plans"
       ]
     },
     {
@@ -82,6 +82,15 @@
           "group": "Daily Plugin",
           "pages": [
             "bubble/daily/getting-started",
+            {
+              "group": "How-tos",
+              "pages": [
+                "bubble/daily/how-tos/use-daily-events",
+                "bubble/daily/how-tos/owner-only-broadcast",
+                "bubble/daily/how-tos/set-up-livestream",
+                "bubble/daily/how-tos/extend-daily-with-api-calls"
+              ]
+            },
             "bubble/daily/plugin-reference"
           ]
         },

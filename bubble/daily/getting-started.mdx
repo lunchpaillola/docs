@@ -2,51 +2,40 @@
 description: "Get started with the Daily video chat plugin for Bubble."
 ---
 
+import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
+
 ### Overview
 
 The Daily plugin for Bubble makes it easy to add robust video and audio chat functionality to your app. With just a few steps, you can start offering seamless video communication within your platform.
 
 ### Quick Setup Guide
 
-1. **Create a Daily Account:**
+1. **Create a Daily Account**: If you don’t have one yet, [sign up for a Daily account](https://dashboard.daily.co/u/signup).
 
-   - If you don’t have one yet, [sign up for a Daily account](https://dashboard.daily.co/u/signup).
+2. **Retrieve Your API Key**: Log in to your [Daily developer dashboard](https://dashboard.daily.co/developers) and copy your API key.
 
-2. **Retrieve Your API Key:**
+3. **Configure the Plugin**: In Bubble, navigate to the plugin settings and enter your Daily API key into the API key section, prefixing it with `Bearer` (e.g., `Bearer 4ffad...`).
 
-   - Log in to your [Daily developer dashboard](https://dashboard.daily.co/developers) and copy your API key.
-
-3. **Configure the Plugin:**
-
-   - In Bubble, navigate to the plugin settings.
-   - Enter your Daily API key into the API key section, prefixing it with `Bearer` (e.g., `Bearer 4ffad...`).
-
-4. **Start Building:**
-   - You’re now ready to use the Daily plugin in your workflows! Begin creating rooms, managing participants, and more using the plugin’s built-in actions.
+4. **Start Building**: You’re now ready to use the Daily plugin in your workflows! Begin creating rooms, managing participants, and more using the plugin’s built-in actions.
 
 <aside>
   ➡️ [Demo the
   Integration](https://bubble.io/page?name=index&id=nocodevideochat&tab=tabs-1)
 </aside>
 
-### Additional Resources
+### How-To Guides
 
-For more tutorials and a step-by-step guide to creating a video chat app with Daily and Bubble, check out this [Daily blog post](https://www.daily.co/blog/integrate-daily-video-chat-in-your-bubble-app-in-less-than-30-minutes).
+Here’s a collection of how-to guides that will help you extend and customize the Daily plugin in your Bubble app:
+
+| **How-To**                      | **Description**                                              | **Link to Guide**                                                  |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ |
+| **Use Daily Events**            | Learn how to trigger actions based on call events            | [Use Daily Events](how-tos/use-daily-events)                       |
+| **Owner-Only Broadcast**        | Set up owner-only broadcast, restricting participant streams | [Owner-Only Broadcast](how-tos/owner-only-broadcast)               |
+| **Set Up Livestream**           | Stream to external platforms like YouTube or Twitch          | [Set Up Livestream](how-tos/set-up-livestream)                     |
+| **Extend Daily with API Calls** | Add custom API calls for additional functionality            | [Extend Daily with API Calls](how-tos/extend-daily-with-api-calls) |
 
 ---
 
-<CardGroup cols={2}>
-  <Card title="Need Help?" icon="envelope" href="/support/overview">
-    Access community or premium support.
-  </Card>
-  <Card
-    title="Have a feature request?"
-    icon="lightbulb"
-    href="https://lunchpaillabs.canny.io/feature-requests?selectedCategory=daily-video-plugin-for-bubble"
-  >
-    Post your feature request on our{" "}
-    <a href="https://lunchpaillabs.canny.io/feature-requests?selectedCategory=daily-video-plugin-for-bubble">
-      idea board.
-    </a>
-  </Card>
-</CardGroup>
+For more tutorials and a step-by-step guide to creating a video chat app with Daily and Bubble, check out this [Daily blog post](https://www.daily.co/blog/integrate-daily-video-chat-in-your-bubble-app-in-less-than-30-minutes).
+
+<dailyBubbleFooter />
