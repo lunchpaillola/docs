@@ -50,21 +50,12 @@
     {
       "name": "Adalo",
       "url": "adalo"
-    },
-    {
-      "name": "Support",
-      "url": "support"
     }
   ],
   "navigation": [
     {
       "group": "Add-ons",
-      "pages": [
-        "introduction",
-        "bubble/overview",
-        "adalo/overview",
-        "support/plans"
-      ]
+      "pages": ["introduction", "bubble/overview", "adalo/overview"]
     },
     {
       "group": "Plugins",
