@@ -92,8 +92,17 @@
           ]
         },
         {
-          "group": "Multiplayer Plugin",
-          "pages": ["bubble/multiplayer/getting-started"]
+          "group": "Liveblocks Plugin",
+          "pages": [
+            "bubble/liveblocks/getting-started",
+            {
+              "group": "Plugin Reference",
+              "pages": [
+                "bubble/liveblocks/plugin-reference/elements",
+                "bubble/liveblocks/plugin-reference/actions"
+              ]
+            }
+          ]
         }
       ]
     },
