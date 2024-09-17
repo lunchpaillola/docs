@@ -102,8 +102,24 @@
             {
               "group": "Plugin Reference",
               "pages": [
-                "bubble/liveblocks/plugin-reference/elements",
-                "bubble/liveblocks/plugin-reference/actions"
+                {
+                  "group": "Elements",
+                  "pages": [
+                    "bubble/liveblocks/plugin-reference/elements/liveblocks-presence"
+                  ]
+                },
+                {
+                  "group": "Actions",
+                  "pages": [
+                    "bubble/liveblocks/plugin-reference/actions/authorize-user",
+                    "bubble/liveblocks/plugin-reference/actions/create-room",
+                    "bubble/liveblocks/plugin-reference/actions/delete-room",
+                    "bubble/liveblocks/plugin-reference/actions/get-active-users",
+                    "bubble/liveblocks/plugin-reference/actions/get-room",
+                    "bubble/liveblocks/plugin-reference/actions/update-room",
+                    "bubble/liveblocks/plugin-reference/actions/update-room-id"
+                  ]
+                }
               ]
             }
           ]

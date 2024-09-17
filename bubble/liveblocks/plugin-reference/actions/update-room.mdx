@@ -1,0 +1,107 @@
+import liveblocksFooter from "/snippets/liveblocksFooter.mdx";
+Use this action to update properties of an existing room
+
+### Fields
+
+The following fields are available in this action:
+
+| **Field**            | **Type** | **Description**                                                            |
+| -------------------- | -------- | -------------------------------------------------------------------------- |
+| **Room ID**          | Text     | The ID of the room to update                                               |
+| **Default Accesses** | Dropdown | The default access level for the room. Options: **private** or **public**. |
+
+### Returned Values
+
+The following values are returned by the action:
+
+| **Value**              | **Type** | **Description**                                    |
+| ---------------------- | -------- | -------------------------------------------------- |
+| **Type**               | Text     | The type of object.                                |
+| **ID**                 | Text     | The ID of the room.                                |
+| **Last Connection At** | Date     | The timestamp of the last connection to the room.  |
+| **Created At**         | Date     | The timestamp when the room was created.           |
+| **Default Accesses**   | Text     | The default access level of the created room.      |
+| **Error**              | Yes/No   | Indicates if there was an error during the action. |
+| **Message**            | Text     | Displays the error message if an error occurred.   |
+| **Status**             | Number   | The error code if the action failed                |
+
+## **Delete Room**
+
+Use this action to delete an existing room.
+
+### Fields
+
+The following fields are available in this action:
+
+| **Field**   | **Type** | **Description**              |
+| ----------- | -------- | ---------------------------- |
+| **Room ID** | Text     | The ID of the room to delete |
+
+### Returned Values
+
+The following values are returned by the action:
+
+| **Value**   | **Type** | **Description**                                    |
+| ----------- | -------- | -------------------------------------------------- |
+| **Error**   | Yes/No   | Indicates if there was an error during the action. |
+| **Message** | Text     | Displays the error message if an error occurred.   |
+| **Status**  | Number   | he error code if the action failed                 |
+
+## **Update Room ID**
+
+Use this action to update the ID of an existing room.
+
+### Fields
+
+The following fields are available in this action:
+
+| **Field**       | **Type** | **Description**              |
+| --------------- | -------- | ---------------------------- |
+| **Room ID**     | Text     | The ID of the room to update |
+| **New Room ID** | Dropdown | The new ID for the room      |
+
+### Returned Values
+
+The following values are returned by the action:
+
+| **Value**              | **Type** | **Description**                                    |
+| ---------------------- | -------- | -------------------------------------------------- |
+| **Type**               | Text     | The type of object.                                |
+| **ID**                 | Text     | The ID of the room.                                |
+| **Last Connection At** | Date     | The timestamp of the last connection to the room.  |
+| **Created At**         | Date     | The timestamp when the room was created.           |
+| **Default Accesses**   | Text     | The default access level of the created room.      |
+| **Error**              | Yes/No   | Indicates if there was an error during the action. |
+| **Message**            | Text     | Displays the error message if an error occurred.   |
+| **Status**             | Number   | he error code if the action failed                 |
+
+## **Get Active Users**
+
+Use this action to retrieve a list of users currently present in the specified room.
+
+### Fields
+
+The following fields are available in this action:
+
+| **Field**   | **Type** | **Description**                                   |
+| ----------- | -------- | ------------------------------------------------- |
+| **Room ID** | Text     | The ID of the room to retrieve active users from. |
+
+### Returned Values
+
+The following values are returned by the action:
+
+| **Value**        | **Type**    | **Description**                                      |
+| ---------------- | ----------- | ---------------------------------------------------- |
+| **Active Users** | Text (list) | A list of user IDs for all active users in the room. |
+| **Error**        | Yes/No      | Indicates if there was an error during the action.   |
+| **Message**      | Text        | Displays the error message if an error occurred.     |
+| **Status**       | Number      | The error code if the action failed.                 |
+
+---
+
+<liveblocksFooter />
+
+---
+
+<liveblocksFooter />
