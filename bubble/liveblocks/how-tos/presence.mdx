@@ -1,36 +1,161 @@
 ---
-title: "How to display records"
+title: "Enable presence"
 ---
 
-import smartsuiteFooter from "/snippets/smartsuiteFooter.mdx";
+import liveblocksFooter from "/snippets/liveblocksFooter.mdx";
 
-Once you have the record structure set up, you can display SmartSuite records in your Bubble app. This guide will walk you through the process.
+One of the first things you'll want to do after setting up Liveblocks in your app is likely to work with presence. Presence allows you to track who's on a page, and you can use it to build features like:
 
-## Steps
+- **Activity indicators**: Show which users are currently active or idle.
+- **Online statuses**: Display whether users are online, offline, or away.
+- **Collaborative editing indicators**: Show when multiple users are viewing or editing the same document or page.
 
-1. **Create a New Page**
+## What we'll build
 
-   - Add a repeating group to the page for listing the records.
-   - Refer to the [demo setup for an example](https://bubble.io/page?id=smartsuite&tab=tabs-1&name=display-records&type=page).
+This tutorial covers how we set up presence in the demo app. For the exact setup, visit the [demo editor](https://bubble.io/page?id=lpl-liveblocks&tab=tabs-1&name=presence&type=page), or [try the live demo](http://lpl-liveblocks.bubbleapps.io/version-test/presence).
 
-2. **Set the Data Type**
+[screenshot]
 
-   - Set the data type to the one you defined (if you haven’t imported the data format yet, refer back to the [Get the Record Structure](/bubble/smartsuite/how-tos/get-record-structure) guide).
-   - ![Example workflow](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c69fe6388be8756feaf4e4_CleanShot%202024-08-21%20at%2022.12.46%402x.png)
+# Steps
 
-3. **Display the Data**
+### 1. Install and set up the plugin:
 
-   - Add an action to display the fetched data in the repeating group.
-   - ![Example workflow](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c6b4e921268a573c066220_CleanShot%202024-08-21%20at%2023.39.57%402x.png)
+If you haven't already set up the Liveblocks plugin, and install it. If you want a step by step guide for that part check out plugin set up instructions [here](/bubble/liveblocks/how-tos/set-up-plugin).
 
-4. **Add Content to Repeating Group**
+## Database
 
-   - Add a text element to the repeating group and set the content to the data type’s title.
-   - Refer to the [demo setup for an example](https://bubble.io/page?id=smartsuite&tab=tabs-1&name=display-records&type=page).
+### 2. Set up the database
 
-5. **Preview the Results**
-   - Hit preview to see the records display.
-   - ![Preview](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c6a1fa9188fa86d735f76f_CleanShot%202024-08-21%20at%2022.21.47%402x.png)
+In this demo we're displaying users that visit the page when they visit the page. To do this we'll need to set up our database so there are users. To make it more visually interesting i'm updating the built in user data type to include a profile image and a name.
+
+Go to the data tab and create two new fields
+
+- name of type text
+- and profile image of type image.
+
+[screenshot]
+
+Then update the privacy settings for this demo we're making user data public (to avoid having to set up a login system just for this demo) make sre tp check view all fields and find in searches for everyone. In a real production app you want to be more careful with any user data by making this public anyone can see this user data.
+
+[screenshot]
+
+Finally we'll add the data, here's the data type you can copy the field in the csv to add the data. If you have a paid plan you can use the upload feature otherwsie just add a fre tows for the demo data. For the tutorial you'll only need to add 3 users
+
+## Design
+
+Next up we'll create a lightweight design for the page. This will be quite spartan but in your production app feel free to create something with a little more ✨pizazz✨. The purpose of this page is to demonstrate presence. If you'd like to skip ahead to functional parts of adding presence. this deisgn section is kind of out of the way all you need to know is to add the presence element to your bubble app somewhere on the page. Explained [here](#5-adding-the-liveblocks-presence-element)
+
+### 3. Create a New Page
+
+In your Bubble app, create a new page
+
+[screenshot]
+
+Give the page a name for the purposes of this tutorial i'm calling mine presence-tutorial
+
+[screenshot]
+
+### 4. Setting up the page
+
+Change the layout of the page click on the page until the property editor opens and then go to the layout table and select column instead of fixed.
+
+[screenshot]
+
+### 5. Adding the Liveblocks presence element
+
+Next we'll add a popup. It's going to be a hidden popup just to house our presence element. Technically, the element just needs to be somewhere on the page but i find a hidden popup keeps things out of the way. This element that comes with the plugin is going to keep all the information we need about who is online and who isn't online. Drag a popup on to your page and for organization sake rename it to "hidden popup".
+
+[screenshot]
+
+Then we'll add the liveblocks presence element to the popup. Search for "liveblocks-presence" and then drag it onto the popup
+
+[screenshot]
+
+- ![Example workflow](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c69fe6388be8756feaf4e4_CleanShot%202024-08-21%20at%2022.12.46%402x.png)
+
+### 6. Add a floating group
+
+Next up let's create a floating group. This will be used to display a list of avatars for users who are currently on the page. We'll later put a repeating group inside this floating group so it'll stay at the top of our page no matter the scroll position.
+
+In your assets search for "floating group" and drag it on to the page. Make sure that in the appearance tab vertically float relative to is "top", and horizontally float relative to is "left" and floating zindex is "above elements"
+
+[screenshot]
+
+In the layout tab uncheck make this element fixed-width and fixed-height change the min-width to 100% and the min-height to 100px check fit height to content.
+
+[screenshot]
+
+### 7. Add a repeating group
+
+Next up, we'll add a repeating group to our floating group. This will be used to display a list of avatars for users who are currently on the page.
+
+Add the repeating group from assets make sure the type of content is text, the data source will be "Liveblocks-presence (testing) A's everyone". The everyone state will hold all people in the room including the local user.
+
+Make sure in the appearance tab has the following settings:
+
+- check set fixed number of rows
+- rows number 1
+- uncheck set fix number of columns
+- minimum width of the column is 20%
+- separators should be set to none.
+
+[screenshot]
+
+In the appearance tab set the following:
+
+- cell's container layout to column
+-container alignment to top
+- the element is visible on page load
+-uncheck make this element fixed-width
+-uncheck make this element fixed-height
+-min height set to 0
+-check fit height to content
+
+### 6. Building the avatar
+
+Next up is the group user which will house our profile image, you can really put whatever you desire in here but we're going to pull in the users (since later in this tutorial we'll sync Liveblock users with the plugin users)
+
+Take a group and add it to the repeating group we'll call the group "group user" and set the type of content to "user"
+
+[screenshot]
+
+Then we'll update the data source select "do a search for" and make the type "user" and the unique id = current cell's text. The repeatnig group data type is a list of user IDs which we'll set (late in this tutorial) everytime someone joins a room. These user IDs will correespond with bubble's unique ID.
+
+[screenshot]
+
+Finally we'll add an image element to the group user and set the image to the " Parent group's user's profile image" and we'll also process the image with Imgix and ebale the following settings
+- check auto enhance the image
+- quality 100
+- check resize to fit the dimensions by cropping
+- check apply a circle/ellipse mask
+
+[screenshot]
+
+and we can apply a border solid with color success (#177db4e) and a tool tip that will be the parent group's user's name.
+
+[screenshot]
+
+Then in the layout tab set the width to 50 px, check the keep element aspect ratio fixed and change the apsect ratio to 1x1
+
+[screenshot]
+
+and that's it for setting up the design!
+
+## Workflows
+
+Now for the meat we'll need to set up workflows to make our design functional!
+
+### 7. Create a room
+
+Let's start by creating a workflow that will run on page load to create a room. We'll only need to do this once jsut so we have a room to join for the purposes of the demo.
+on page load add the liveblocks create room action.
+
+add a new event when page is loaded
+[screenshot]
+
+then add the "liveblocks create room action
+
+[screenshot]
 
 ---
 
@@ -38,4 +163,4 @@ Once you have the record structure set up, you can display SmartSuite records in
 
 Now that you've successfully displayed records, explore more advanced features of the SmartSuite plugin through our [Plugin Reference](/bubble/smartsuite/plugin-reference).
 
-<smartsuiteFooter />
+<liveblocksFooter />

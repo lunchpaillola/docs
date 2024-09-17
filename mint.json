@@ -65,7 +65,7 @@
           "pages": [
             "bubble/smartsuite/getting-started",
             {
-              "group": "How-tos",
+              "group": "How-to",
               "pages": [
                 "bubble/smartsuite/how-tos/get-record-structure",
                 "bubble/smartsuite/how-tos/display-records"
@@ -80,7 +80,7 @@
           "pages": [
             "bubble/daily/getting-started",
             {
-              "group": "How-tos",
+              "group": "How-to",
               "pages": [
                 "bubble/daily/how-tos/use-daily-events",
                 "bubble/daily/how-tos/owner-only-broadcast",
@@ -95,6 +95,10 @@
           "group": "Liveblocks Plugin",
           "pages": [
             "bubble/liveblocks/getting-started",
+            {
+              "group": "How-to",
+              "pages": ["bubble/liveblocks/how-tos/set-up-plugin"]
+            },
             {
               "group": "Plugin Reference",
               "pages": [
