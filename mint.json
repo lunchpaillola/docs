@@ -97,7 +97,10 @@
             "bubble/liveblocks/getting-started",
             {
               "group": "How-to",
-              "pages": ["bubble/liveblocks/how-tos/set-up-plugin"]
+              "pages": [
+                "bubble/liveblocks/how-tos/set-up-plugin",
+                "bubble/liveblocks/how-tos/presence"
+              ]
             },
             {
               "group": "Plugin Reference",

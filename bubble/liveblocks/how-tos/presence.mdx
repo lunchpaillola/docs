@@ -1,166 +1,240 @@
 ---
-title: "Enable presence"
+title: "Use the presence element"
 ---
 
 import liveblocksFooter from "/snippets/liveblocksFooter.mdx";
 
-One of the first things you'll want to do after setting up Liveblocks in your app is likely to work with presence. Presence allows you to track who's on a page, and you can use it to build features like:
+One of the first things you'll want to do after setting up Liveblocks in your app is likely to work with the [presence element](/bubble/liveblocks/plugin-reference/elements/liveblocks-presence). Presence allows you to track who's on a page, and you can use it to build features like:
 
 - **Activity indicators**: Show which users are currently active or idle.
 - **Online statuses**: Display whether users are online, offline, or away.
-- **Collaborative editing indicators**: Show when multiple users are viewing or editing the same document or page.
+- **Collaborative editing indicators**: Show when multiple users are viewing the same document or page.
 
 ## What we'll build
 
-This tutorial covers how we set up presence in the demo app. For the exact setup, visit the [demo editor](https://bubble.io/page?id=lpl-liveblocks&tab=tabs-1&name=presence&type=page), or [try the live demo](http://lpl-liveblocks.bubbleapps.io/version-test/presence).
+This tutorial covers how we set up presence in the demo app. For the exact setup from this tutorial, visit the [tutorial demo editor](https://bubble.io/page?id=lpl-liveblocks&tab=tabs-2&name=presence-tutorial&type=page), or [try the live demo](https://lpl-liveblocks.bubbleapps.io/version-test/live-cursors).
 
-[screenshot]
+![Live demo of presence](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726672111/demoofthelivepresense_uhj5zw.gif)
 
-# Steps
+## Prerequisites
 
 ### 1. Install and set up the plugin:
 
-If you haven't already set up the Liveblocks plugin, and install it. If you want a step by step guide for that part check out plugin set up instructions [here](/bubble/liveblocks/how-tos/set-up-plugin).
+If you haven’t already installed the Liveblocks plugin, you can find a step-by-step guide [here](/bubble/liveblocks/how-tos/set-up-plugin).
 
 ## Database
 
 ### 2. Set up the database
 
-In this demo we're displaying users that visit the page when they visit the page. To do this we'll need to set up our database so there are users. To make it more visually interesting i'm updating the built in user data type to include a profile image and a name.
+In this demo, we’ll display users that visit the page. To do this, we need to update the `User` data type in the database by adding a `name` and a `profile image`.
 
-Go to the data tab and create two new fields
+Go to the **Data** tab and create two new fields:
 
-- name of type text
-- and profile image of type image.
+- `name` of type `text`
+- `profile image` of type `image`
 
-[screenshot]
+![data tab](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670058/database_1_u1yeyu.png)
 
-Then update the privacy settings for this demo we're making user data public (to avoid having to set up a login system just for this demo) make sre tp check view all fields and find in searches for everyone. In a real production app you want to be more careful with any user data by making this public anyone can see this user data.
+### 3. Update the privacy settings
 
-[screenshot]
+For this demo, we’ll make the user data public to avoid setting up a login system. Go to the **Privacy** tab and check `View all fields` and `Find in searches` for everyone.
 
-Finally we'll add the data, here's the data type you can copy the field in the csv to add the data. If you have a paid plan you can use the upload feature otherwsie just add a fre tows for the demo data. For the tutorial you'll only need to add 3 users
+⚠️ In a production app, be more careful with privacy settings to protect user data.
+
+![privacy settings](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670057/database_2_hfsg1c.png)
+
+### 4. Add sample data
+
+Finally, add some user data. You can copy the [CSV file](https://drive.google.com/file/d/1xd2Dz6gGAWNcrIb_wGV4Y_vAr_8jDHDF/view?usp=sharing) and upload it into Bubble if you have a paid plan or trial, or manually add at least three users for this demo.
+
+![Adding data](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670059/database_3_lsogos.png)
 
 ## Design
 
-Next up we'll create a lightweight design for the page. This will be quite spartan but in your production app feel free to create something with a little more ✨pizazz✨. The purpose of this page is to demonstrate presence. If you'd like to skip ahead to functional parts of adding presence. this deisgn section is kind of out of the way all you need to know is to add the presence element to your bubble app somewhere on the page. Explained [here](#5-adding-the-liveblocks-presence-element)
+Next is a simple design for the page. While not essential for using presence, it’s needed for the demonstration. If you want to skip ahead to the element setup, jump to the [section on adding the presence element](#5-adding-the-liveblocks-presence-element).
 
 ### 3. Create a New Page
 
-In your Bubble app, create a new page
+In your Bubble app, create a new page.
 
-[screenshot]
+![Create a new page](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670053/presence_s1_rx5aol.png)
 
-Give the page a name for the purposes of this tutorial i'm calling mine presence-tutorial
+Give the page a name. For this tutorial, I’m calling it `presence-tutorial`.
 
-[screenshot]
+![Name the page](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670515/presence_s2_bq8xyr.png)
 
 ### 4. Setting up the page
 
-Change the layout of the page click on the page until the property editor opens and then go to the layout table and select column instead of fixed.
+Change the layout of the page. Click on the page until the property editor opens, then go to the **Layout** tab and select `column` instead of `fixed`.
 
-[screenshot]
+![set up the page](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670516/presence_s3_jmprdd.png)
 
 ### 5. Adding the Liveblocks presence element
 
-Next we'll add a popup. It's going to be a hidden popup just to house our presence element. Technically, the element just needs to be somewhere on the page but i find a hidden popup keeps things out of the way. This element that comes with the plugin is going to keep all the information we need about who is online and who isn't online. Drag a popup on to your page and for organization sake rename it to "hidden popup".
+Add a hidden popup to house the presence element. This keeps it organized and out of the way.
 
-[screenshot]
+Drag a popup onto your page and rename it `hidden popup`.
 
-Then we'll add the liveblocks presence element to the popup. Search for "liveblocks-presence" and then drag it onto the popup
+![add popup](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670054/presence_s4_eeai8n.png)
 
-[screenshot]
+Search for `liveblocks-presence` and drag it into the popup to track who’s online.
 
-- ![Example workflow](https://uploads-ssl.webflow.com/5eed6e6fe625d140525c5769/66c69fe6388be8756feaf4e4_CleanShot%202024-08-21%20at%2022.12.46%402x.png)
+![add presence element](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670053/presence_s5_pzq0sd.png)
 
 ### 6. Add a floating group
 
-Next up let's create a floating group. This will be used to display a list of avatars for users who are currently on the page. We'll later put a repeating group inside this floating group so it'll stay at the top of our page no matter the scroll position.
+Create a `floating group` that will later house our repeating group for avatars.
 
-In your assets search for "floating group" and drag it on to the page. Make sure that in the appearance tab vertically float relative to is "top", and horizontally float relative to is "left" and floating zindex is "above elements"
+Search for `floating group` in your assets and drag it onto the page. In the **Appearance** tab, set the following:
 
-[screenshot]
+- Vertically float relative to: `top`
+- Horizontally float relative to: `left`
+- Floating z-index: `above elements`
 
-In the layout tab uncheck make this element fixed-width and fixed-height change the min-width to 100% and the min-height to 100px check fit height to content.
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670054/presence_s6_u4vjsx.png)
 
-[screenshot]
+In the **Layout** tab, uncheck `make this element fixed-width` and `fixed-height`. Set the `min-width` to 100% and `min-height` to 100px, then check `fit height to content`.
+
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670053/presence_s7_kvsekl.png)
 
 ### 7. Add a repeating group
 
-Next up, we'll add a repeating group to our floating group. This will be used to display a list of avatars for users who are currently on the page.
+Add a `repeating group` from the assets to the `floating group`. Set the **type of content** to `text` and the **data source** to `Liveblocks-presence (testing) A's everyone`. This data source holds all users in the room, including the local user.
 
-Add the repeating group from assets make sure the type of content is text, the data source will be "Liveblocks-presence (testing) A's everyone". The everyone state will hold all people in the room including the local user.
+In the **Appearance** tab, set the following:
 
-Make sure in the appearance tab has the following settings:
+- Check `set fixed number of rows`
+- Set `rows` to 1
+- Uncheck `set fixed number of columns`
+- Set `minimum width of the column` to 20%
+- Set `separators` to `none`
+- Set `border` to `none`
 
-- check set fixed number of rows
-- rows number 1
-- uncheck set fix number of columns
-- minimum width of the column is 20%
-- separators should be set to none.
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670058/presence_s8_n9gqkb.png)
 
-[screenshot]
+In the **Layout** tab, set the following:
 
-In the appearance tab set the following:
+- Set `cell's container layout` to `column`
+  - Set `container alignment` to `top`
+- Check `element is visible on page load`
+- Uncheck `make this element fixed-width`
+- Uncheck `make this element fixed-height`
+- Set `min height` to 0
+- Check `fit height to content`
 
-- cell's container layout to column
--container alignment to top
-- the element is visible on page load
--uncheck make this element fixed-width
--uncheck make this element fixed-height
--min height set to 0
--check fit height to content
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670058/presence_s9_jx7sfl.png)
 
-### 6. Building the avatar
+### 8. Create the avatar
 
-Next up is the group user which will house our profile image, you can really put whatever you desire in here but we're going to pull in the users (since later in this tutorial we'll sync Liveblock users with the plugin users)
+Create a `group user` that will display the profile image of users when they are on the page.
 
-Take a group and add it to the repeating group we'll call the group "group user" and set the type of content to "user"
+Add a group to the repeating group, name it `group user`, and set the **type of content** to `user`.
 
-[screenshot]
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670058/presence_s10_n3mmce.png)
 
-Then we'll update the data source select "do a search for" and make the type "user" and the unique id = current cell's text. The repeatnig group data type is a list of user IDs which we'll set (late in this tutorial) everytime someone joins a room. These user IDs will correespond with bubble's unique ID.
+Set the data source to `do a search for`, make the **type** `user`, and set the unique id to `current cell's text`. This data source is a list of user IDs (which we'll set later), matching Bubble's unique IDs.
 
-[screenshot]
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670059/presensce_s11_qirgnm.png)
 
-Finally we'll add an image element to the group user and set the image to the " Parent group's user's profile image" and we'll also process the image with Imgix and ebale the following settings
-- check auto enhance the image
-- quality 100
-- check resize to fit the dimensions by cropping
-- check apply a circle/ellipse mask
+Add an `image` element to the `group user` and set the image to `Parent group's user's profile image`. Enable **Imgix** and the following settings:
 
-[screenshot]
+- Check `auto enhance the image`
+- Set `quality` to 100
+- Check `resize to fit dimensions by cropping`
+- Check `apply a circle/ellipse mask`
 
-and we can apply a border solid with color success (#177db4e) and a tool tip that will be the parent group's user's name.
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670059/presence_s12_jvdxyy.png)
 
-[screenshot]
+Add a border with `solid color #177db4e` and set a tooltip to display the `parent group's user's name`.
 
-Then in the layout tab set the width to 50 px, check the keep element aspect ratio fixed and change the apsect ratio to 1x1
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670060/presence_s13_ezeiiv.png)
 
-[screenshot]
+In the **Layout** tab, set the **width** to 50px, check `keep element aspect ratio fixed`, and set the aspect ratio to `1x1`.
 
-and that's it for setting up the design!
+![screenshot](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670063/presence_s14_hmisfx.png)
+
+That's it for setting up the design!
 
 ## Workflows
 
-Now for the meat we'll need to set up workflows to make our design functional!
+Workflows are where most of the interaction with Liveblocks will happen.
 
-### 7. Create a room
+### 9. Create a room
 
-Let's start by creating a workflow that will run on page load to create a room. We'll only need to do this once jsut so we have a room to join for the purposes of the demo.
-on page load add the liveblocks create room action.
+Create a workflow that runs on page load to create a room for the demo.
 
-add a new event when page is loaded
-[screenshot]
+On page load, add the `Liveblocks - create room` action. Set the `Room ID` to `tutorial` and the `Default Access` to `public`.
 
-then add the "liveblocks create room action
+Add a new event: `When page is loaded`.
 
-[screenshot]
+![when page is loaded](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670062/presence_s15_bruk8w.png)
+
+Then add the `Liveblocks - create room` action.
+
+![create room action](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670061/presence_s16_qfhtux.png)
+
+Add the [Air Alert plugin](https://bubble.io/plugin/airalert-1515787032525x876315403042684900) for confirmation. We'll use it to show an alert with the room name after the room is created.
+
+![air alert action](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670063/presence_s17_tnmcn5.png)
+
+Preview the page to confirm that the room was created successfully.
+
+![preview the page](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670062/presence_s18_mvejfk.png)
+
+Great! Now that the room is created, we can move on to entering the room.
+
+### 10. Workflow to enter a room
+
+You can now disable the `on page load` workflow—we won't need it anymore since our room is created.
+
+![Disable on page load workflow](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670062/presence_s19_gsbz6y.png)
+
+Create a new `page is loaded` workflow. We will add an action to set the state of an element. In Bubble, states allow you to store information within elements. For this demo, we'll use states to store a random user ID from our database to simulate a random user. In a real production app, you'd use the current user's unique ID, but we're avoiding login for this tutorial.
+
+Add a new action to set the state of an element:
+
+![Set the state of an element](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670061/presence_s20_piviq1.png)
+
+Set the element in the action's property editor to `presence-tutorial`, then create a new custom state:
+
+![Create a new custom state](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670061/presence_s21_bbumi9.png)
+
+Call the state `User ID` and make it of type `text`.
+
+![Set the state to User ID](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670061/presence_s22_sikbnm.png)
+
+Add an action to set the state of the element to a random user ID.
+
+![Set state to random user ID](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670065/presence_s23_t9ddxx.png)
+
+Add the `authorize user` action—this authorizes users in Bubble with Liveblocks.
+
+- For the `user ID` field, use the `User ID` state we just created.
+- For the `Room ID`, use the `tutorial` room you created.
+- Set `permissions` to `FULL_ACCESS`.
+
+![Authorize user action](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670066/presence_s24_l17qgy.png)
+
+Add the `create client` action—this creates an instance of Liveblocks in Bubble. The `ID token` is the result of the user you just authorized. You can leave `throttle` and `lost connection time` as is. Learn more about the parameters of the `create client` action [here](/bubble/liveblocks/plugin-reference/elements/liveblocks-presence#create-client).
+
+![Create client action](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670065/presense_s25_vsfkq5.png)
+
+Add the `enter room` action. This is what joins the user in the room. Enter the `Room ID` and `User ID`, and keep the rest as default. Learn more about the advanced settings (e.g., live cursors) in [this tutorial](/bubble/liveblocks/how-tos/live-cursors).
+
+![Enter room action](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670065/presence_s26_fdcvwr.png)
+
+## Demo
+
+### 11. Trying it out
+
+Select `preview` and you should see the page load with your avatar at the top. Open several tabs to see the users on the page update in real time!
+
+![Avatar and real-time updates](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726670065/presence_s27_fmdipc.png)
 
 ---
 
-### Next Steps
+## Next Steps
 
-Now that you've successfully displayed records, explore more advanced features of the SmartSuite plugin through our [Plugin Reference](/bubble/smartsuite/plugin-reference).
+Now that you've got presence running, kick it up a notch with [live cursors](/bubble/liveblocks/how-tos/live-cursors).
 
 <liveblocksFooter />
