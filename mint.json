@@ -99,7 +99,8 @@
               "group": "How-to",
               "pages": [
                 "bubble/liveblocks/how-tos/set-up-plugin",
-                "bubble/liveblocks/how-tos/presence"
+                "bubble/liveblocks/how-tos/presence",
+                "bubble/liveblocks/how-tos/live-cursors"
               ]
             },
             {
