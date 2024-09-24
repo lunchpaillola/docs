@@ -18,14 +18,9 @@
   "primaryTab": {
     "name": "Welcome"
   },
-  "topbarLinks": [
-    {
-      "name": "Blog",
-      "url": "https://lunchpaillabs.com/blog"
-    }
-  ],
+  "topbarLinks": [],
   "topbarCtaButton": {
-    "name": "Home",
+    "name": "Partner with us",
     "url": "https://lunchpaillabs.com/"
   },
   "anchors": [
@@ -36,10 +31,16 @@
       "url": "https://addons.lunchpaillabs.com/support/plans"
     },
     {
-      "name": "Manage Account",
+      "name": "Account",
       "icon": "gear",
       "color": "#1f2de6",
       "url": "https://billing.stripe.com/p/login/cN2cO37xGbhu9zi7ss"
+    },
+    {
+      "name": "Blog",
+      "icon": "book",
+      "color": "#1f2de6",
+      "url": "https://lunchpaillabs.com/blog"
     }
   ],
   "tabs": [
