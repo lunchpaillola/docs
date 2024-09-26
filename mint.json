@@ -86,6 +86,7 @@
                 "bubble/daily/how-tos/use-daily-events",
                 "bubble/daily/how-tos/owner-only-broadcast",
                 "bubble/daily/how-tos/set-up-livestream",
+                "bubble/daily/how-tos/customize-a-recording",
                 "bubble/daily/how-tos/enable-breakout-rooms",
                 "bubble/daily/how-tos/extend-daily-with-api-calls"
               ]
@@ -111,6 +112,7 @@
                     "bubble/daily/plugin-reference/actions/update-participant-audio",
                     "bubble/daily/plugin-reference/actions/get-presence",
                     "bubble/daily/plugin-reference/actions/start-recording",
+                    "bubble/daily/plugin-reference/actions/update-recording",
                     "bubble/daily/plugin-reference/actions/stop-recording",
                     "bubble/daily/plugin-reference/actions/get-recording-link",
                     "bubble/daily/plugin-reference/actions/get-recordings",
