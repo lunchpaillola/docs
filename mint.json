@@ -86,6 +86,7 @@
                 "bubble/daily/how-tos/use-daily-events",
                 "bubble/daily/how-tos/owner-only-broadcast",
                 "bubble/daily/how-tos/set-up-livestream",
+                "bubble/daily/how-tos/enable-breakout-rooms",
                 "bubble/daily/how-tos/extend-daily-with-api-calls"
               ]
             },
@@ -128,7 +129,8 @@
                   ]
                 }
               ]
-            }
+            },
+            "bubble/daily/changelog"
           ]
         },
         {
