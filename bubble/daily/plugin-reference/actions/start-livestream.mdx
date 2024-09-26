@@ -1,0 +1,20 @@
+---
+title: "Start livestream"
+description: "Use this action to start a livestream. This action requires a credit card to unlock. You can add a credit card [here] (https://dashboard.daily.co/billing)."
+---
+
+import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
+
+### Fields
+
+| **Field**         | **Type** | **Description**                                                                                                                                                      |
+| ----------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Room URL**      | Text     | Enter the full Daily room url for the room a user would like to stream. This should be in the format https://your-daily-domain.daily.co/room-name                    |
+| **RTMP URL**      | Dropdown | Retrieve this from your streaming provider (ie youtube, twitch etc) This should be in the format rtmp://RTMP_ENDPOINT/STREAM_KEY or rtmps://RTMP_ENDPOINT/STREAM_KEY |
+| **Meeting Token** | Text     | Enter a meeting owner token to livestream. You can use the Daily - create a meeting token action to create a meeting owner token.                                    |
+
+### Returned Values
+
+## This action does not return any values.
+
+<dailyBubbleFooter />

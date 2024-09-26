@@ -1,0 +1,38 @@
+---
+title: "Daily Events"
+description: "Use this element to enable Daily events in your app. Learn how to use this element in the [how-to guide](/bubble/daily/how-tos/use-daily-events)."
+---
+
+import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
+
+### Events
+
+The following events can be emitted during a Daily call:
+
+| **Event**                  | **Description**                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------------------ |
+| **left-meeting**           | Emitted when the local participant has left the call. The call is considered disconnected. |
+| **joined-meeting**         | Emitted when the local participant has joined the call. The call is considered connected.  |
+| **participant-left**       | Emitted when a remote participant leaves the call.                                         |
+| **participant-joined**     | Emitted when a remote participant joins the call.                                          |
+| **active-speaker-changed** | Emitted when the active speaker changes during the call.                                   |
+| **recording-started**      | Emitted for all participants when a recording starts.                                      |
+| **recording-stopped**      | Emitted for all participants when a recording stops.                                       |
+
+### Element Actions
+
+| **Action**                        | **Description**                                                                                                                                |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Daily - Begin Event Listening** | Use this action after the Daily - join room action to start listening for events. Not required when using the Daily custom video call element. |
+
+### Exposed States
+
+The following states are available to access information about participants and events in a Daily call:
+
+| **State**                        | **Type** | **Description**                                              |
+| -------------------------------- | -------- | ------------------------------------------------------------ |
+| **event participant user id**    | Text     | The participant user ID associated with the current event.   |
+| **current participant user ids** | List     | A list of user IDs for all current participants in the call. |
+| **active speaker**               | Text     | The user ID of the active speaker in the call.               |
+
+<dailyBubbleFooter />
