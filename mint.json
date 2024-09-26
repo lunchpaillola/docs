@@ -62,7 +62,7 @@
       "group": "Plugins",
       "pages": [
         {
-          "group": "SmartSuite plugin",
+          "group": "SmartSuite",
           "pages": [
             "bubble/smartsuite/getting-started",
             {
@@ -77,7 +77,7 @@
           ]
         },
         {
-          "group": "Daily Plugin",
+          "group": "Daily Video Conferencing",
           "pages": [
             "bubble/daily/getting-started",
             {
@@ -134,7 +134,7 @@
           ]
         },
         {
-          "group": "Liveblocks Plugin",
+          "group": "Liveblocks",
           "pages": [
             "bubble/liveblocks/getting-started",
             {
