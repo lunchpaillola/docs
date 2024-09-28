@@ -171,14 +171,14 @@
       "pages": [
         "adalo/overview",
         {
-          "group": "Daily video chat",
+          "group": "Daily Video Chat",
           "pages": [
             "adalo/daily/getting-started",
             "adalo/daily/component-reference"
           ]
         },
         {
-          "group": "TalkJS chat",
+          "group": "TalkJS Chat",
           "pages": [
             "adalo/talkjs/getting-started",
             "adalo/talkjs/component-reference"
