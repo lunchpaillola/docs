@@ -8,13 +8,13 @@ This guide will walk you through how to use the Daily events element in your Bub
 
 ## Steps
 
-### Add the Daily Events Element
+### 1. Add the Daily Events Element
 
 Place the Daily events element somewhere on the page. A common approach is to place it inside a hidden popup that never triggers, keeping it out of view while it listens for events.
 
 ![Daily Events Element](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726156453/CleanShot_2024-09-12_at_11.51.51_2x_bvxvxx.png)
 
-### Understand Key Events
+### 2. Understand Key Events
 
 The plugin includes several key events that trigger actions when users interact with the call:
 
@@ -27,13 +27,13 @@ The plugin includes several key events that trigger actions when users interact 
 - [Recording error](https://docs.daily.co/reference/daily-js/events/recording-events#recording-error): Fires when a recording has an error.
 - [Active speaker change](https://docs.daily.co/reference/daily-js/events/meeting-events#active-speaker-change): Fires when the active speaker changes, useful for updating the UI during audio-only calls.
 
-### Start Listening to Events
+### 3. Start Listening to Events
 
 Make sure to add the "begin listening" action after you join a room. This is essential for Bubble to start capturing and processing the events.
 
 ![Begin Listening Action](https://res.cloudinary.com/dpfmaccxx/image/upload/v1726156452/CleanShot_2024-09-12_at_11.47.13_2x_s3tue7.png)
 
-### Trigger Actions Based on Events
+### 4. Trigger Actions Based on Events
 
 Use the events to trigger specific actions in your app.
 
