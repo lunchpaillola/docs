@@ -16,7 +16,7 @@
     }
   },
   "primaryTab": {
-    "name": "Welcome"
+    "name": "Documentation"
   },
   "topbarLinks": [],
   "topbarCtaButton": {
@@ -43,24 +43,16 @@
       "url": "https://lunchpaillabs.com/blog"
     }
   ],
-  "tabs": [
-    {
-      "name": "Bubble",
-      "url": "bubble"
-    },
-    {
-      "name": "Adalo",
-      "url": "adalo"
-    }
-  ],
+  "tabs": [],
   "navigation": [
     {
-      "group": "Add-ons",
-      "pages": ["introduction", "bubble/overview", "adalo/overview"]
+      "group": "Getting started",
+      "pages": ["introduction"]
     },
     {
-      "group": "Plugins",
+      "group": "Bubble",
       "pages": [
+        "bubble/overview",
         {
           "group": "SmartSuite",
           "pages": [
@@ -175,8 +167,9 @@
       ]
     },
     {
-      "group": "Components",
+      "group": "Adalo",
       "pages": [
+        "adalo/overview",
         {
           "group": "Daily Component",
           "pages": [
