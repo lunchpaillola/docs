@@ -50,116 +50,112 @@
       "pages": ["introduction"]
     },
     {
-      "group": "Bubble",
+      "group": "Plugins for Bubble",
+      "pages": ["bubble/overview"]
+    },
+    {
+      "group": "SmartSuite",
       "pages": [
-        "bubble/overview",
+        "bubble/smartsuite/getting-started",
         {
-          "group": "SmartSuite",
+          "group": "How to",
           "pages": [
-            "bubble/smartsuite/getting-started",
-            {
-              "group": "How to",
-              "pages": [
-                "bubble/smartsuite/how-tos/get-record-structure",
-                "bubble/smartsuite/how-tos/display-records"
-              ]
-            },
-            "bubble/smartsuite/plugin-reference",
-            "bubble/smartsuite/changelog"
+            "bubble/smartsuite/how-tos/get-record-structure",
+            "bubble/smartsuite/how-tos/display-records"
+          ]
+        },
+        "bubble/smartsuite/plugin-reference",
+        "bubble/smartsuite/changelog"
+      ]
+    },
+    {
+      "group": "Daily Video Conferencing",
+      "pages": [
+        "bubble/daily/getting-started",
+        {
+          "group": "How to",
+          "pages": [
+            "bubble/daily/how-tos/use-daily-events",
+            "bubble/daily/how-tos/owner-only-broadcast",
+            "bubble/daily/how-tos/set-up-livestream",
+            "bubble/daily/how-tos/customize-a-recording",
+            "bubble/daily/how-tos/enable-breakout-rooms",
+            "bubble/daily/how-tos/extend-daily-with-api-calls"
           ]
         },
         {
-          "group": "Daily Video Conferencing",
+          "group": "Reference",
           "pages": [
-            "bubble/daily/getting-started",
             {
-              "group": "How to",
+              "group": "Elements",
+              "pages": ["bubble/daily/plugin-reference/elements/daily-events"]
+            },
+            {
+              "group": "Actions",
               "pages": [
-                "bubble/daily/how-tos/use-daily-events",
-                "bubble/daily/how-tos/owner-only-broadcast",
-                "bubble/daily/how-tos/set-up-livestream",
-                "bubble/daily/how-tos/customize-a-recording",
-                "bubble/daily/how-tos/enable-breakout-rooms",
-                "bubble/daily/how-tos/extend-daily-with-api-calls"
+                "bubble/daily/plugin-reference/actions/create-room",
+                "bubble/daily/plugin-reference/actions/update-room",
+                "bubble/daily/plugin-reference/actions/delete-room",
+                "bubble/daily/plugin-reference/actions/join-room",
+                "bubble/daily/plugin-reference/actions/leave-room",
+                "bubble/daily/plugin-reference/actions/create-meeting-token",
+                "bubble/daily/plugin-reference/actions/update-participant-audio",
+                "bubble/daily/plugin-reference/actions/get-presence",
+                "bubble/daily/plugin-reference/actions/start-recording",
+                "bubble/daily/plugin-reference/actions/update-recording",
+                "bubble/daily/plugin-reference/actions/stop-recording",
+                "bubble/daily/plugin-reference/actions/get-recording-link",
+                "bubble/daily/plugin-reference/actions/get-recordings",
+                "bubble/daily/plugin-reference/actions/start-livestream",
+                "bubble/daily/plugin-reference/actions/stop-livestream",
+                "bubble/daily/plugin-reference/actions/toggle-mic"
               ]
             },
             {
-              "group": "Reference",
+              "group": "Data sources",
               "pages": [
-                {
-                  "group": "Elements",
-                  "pages": [
-                    "bubble/daily/plugin-reference/elements/daily-events"
-                  ]
-                },
-                {
-                  "group": "Actions",
-                  "pages": [
-                    "bubble/daily/plugin-reference/actions/create-room",
-                    "bubble/daily/plugin-reference/actions/update-room",
-                    "bubble/daily/plugin-reference/actions/delete-room",
-                    "bubble/daily/plugin-reference/actions/join-room",
-                    "bubble/daily/plugin-reference/actions/leave-room",
-                    "bubble/daily/plugin-reference/actions/create-meeting-token",
-                    "bubble/daily/plugin-reference/actions/update-participant-audio",
-                    "bubble/daily/plugin-reference/actions/get-presence",
-                    "bubble/daily/plugin-reference/actions/start-recording",
-                    "bubble/daily/plugin-reference/actions/update-recording",
-                    "bubble/daily/plugin-reference/actions/stop-recording",
-                    "bubble/daily/plugin-reference/actions/get-recording-link",
-                    "bubble/daily/plugin-reference/actions/get-recordings",
-                    "bubble/daily/plugin-reference/actions/start-livestream",
-                    "bubble/daily/plugin-reference/actions/stop-livestream",
-                    "bubble/daily/plugin-reference/actions/toggle-mic"
-                  ]
-                },
-                {
-                  "group": "Data sources",
-                  "pages": [
-                    "bubble/daily/plugin-reference/data-sources/get-recordings",
-                    "bubble/daily/plugin-reference/data-sources/meeting-information",
-                    "bubble/daily/plugin-reference/data-sources/room-details",
-                    "bubble/daily/plugin-reference/data-sources/list-rooms"
-                  ]
-                }
+                "bubble/daily/plugin-reference/data-sources/get-recordings",
+                "bubble/daily/plugin-reference/data-sources/meeting-information",
+                "bubble/daily/plugin-reference/data-sources/room-details",
+                "bubble/daily/plugin-reference/data-sources/list-rooms"
               ]
-            },
-            "bubble/daily/changelog"
+            }
+          ]
+        },
+        "bubble/daily/changelog"
+      ]
+    },
+    {
+      "group": "Liveblocks",
+      "pages": [
+        "bubble/liveblocks/getting-started",
+        {
+          "group": "How to",
+          "pages": [
+            "bubble/liveblocks/how-tos/set-up-plugin",
+            "bubble/liveblocks/how-tos/presence",
+            "bubble/liveblocks/how-tos/live-cursors"
           ]
         },
         {
-          "group": "Liveblocks",
+          "group": "Reference",
           "pages": [
-            "bubble/liveblocks/getting-started",
             {
-              "group": "How to",
+              "group": "Elements",
               "pages": [
-                "bubble/liveblocks/how-tos/set-up-plugin",
-                "bubble/liveblocks/how-tos/presence",
-                "bubble/liveblocks/how-tos/live-cursors"
+                "bubble/liveblocks/plugin-reference/elements/liveblocks-presence"
               ]
             },
             {
-              "group": "Reference",
+              "group": "Actions",
               "pages": [
-                {
-                  "group": "Elements",
-                  "pages": [
-                    "bubble/liveblocks/plugin-reference/elements/liveblocks-presence"
-                  ]
-                },
-                {
-                  "group": "Actions",
-                  "pages": [
-                    "bubble/liveblocks/plugin-reference/actions/authorize-user",
-                    "bubble/liveblocks/plugin-reference/actions/create-room",
-                    "bubble/liveblocks/plugin-reference/actions/delete-room",
-                    "bubble/liveblocks/plugin-reference/actions/get-active-users",
-                    "bubble/liveblocks/plugin-reference/actions/get-room",
-                    "bubble/liveblocks/plugin-reference/actions/update-room",
-                    "bubble/liveblocks/plugin-reference/actions/update-room-id"
-                  ]
-                }
+                "bubble/liveblocks/plugin-reference/actions/authorize-user",
+                "bubble/liveblocks/plugin-reference/actions/create-room",
+                "bubble/liveblocks/plugin-reference/actions/delete-room",
+                "bubble/liveblocks/plugin-reference/actions/get-active-users",
+                "bubble/liveblocks/plugin-reference/actions/get-room",
+                "bubble/liveblocks/plugin-reference/actions/update-room",
+                "bubble/liveblocks/plugin-reference/actions/update-room-id"
               ]
             }
           ]
@@ -167,23 +163,21 @@
       ]
     },
     {
-      "group": "Adalo",
+      "group": "Components for Adalo",
+      "pages": ["adalo/overview"]
+    },
+    {
+      "group": "Daily Video Chat",
       "pages": [
-        "adalo/overview",
-        {
-          "group": "Daily Video Chat",
-          "pages": [
-            "adalo/daily/getting-started",
-            "adalo/daily/component-reference"
-          ]
-        },
-        {
-          "group": "TalkJS Chat",
-          "pages": [
-            "adalo/talkjs/getting-started",
-            "adalo/talkjs/component-reference"
-          ]
-        }
+        "adalo/daily/getting-started",
+        "adalo/daily/component-reference"
+      ]
+    },
+    {
+      "group": "TalkJS Chat",
+      "pages": [
+        "adalo/talkjs/getting-started",
+        "adalo/talkjs/component-reference"
       ]
     }
   ],
