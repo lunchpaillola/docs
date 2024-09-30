@@ -5,7 +5,11 @@ description: "Use this action to create 'Meeting tokens' through Daily's API. Me
 
 import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
 
-### Fields
+import dailyPlusFlag from "/snippets/dailyPlusFlag.mdx";
+
+#Fields
+
+### General
 
 The following fields are available in this action:
 
@@ -25,7 +29,16 @@ The following fields are available in this action:
 | **Not Before (Unix Timestamp)** | Number   | Users cannot join the room before this time. A Unix timestamp (seconds since epoch). Optional.                                                                                |
 | **Expires (Unix Timestamp)**    | Number   | Users cannot join the room after this time. A Unix timestamp (seconds since epoch). Optional.                                                                                 |
 
-### Returned Values
+### Transcription
+
+<dailyPlusFlag feature="feature" />
+
+| **Field**            | **Type** | **Description**                                                                                                                                                                                                                                       |
+| -------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Auto start**       | Boolean  | Start transcription when an owner joins the room. This property can be used to always transcribe meetings once an owner joins.                                                                                                                        |
+| **Live captions UI** | Boolean  | Sets whether the participant sees a closed captions button in their Daily Prebuilt call tray. When the closed caption button is clicked, closed captions are displayed locally. When set to `yes`, a closed captions button appears in the call tray. |
+
+# Returned Values
 
 The following values are returned by the action:
 

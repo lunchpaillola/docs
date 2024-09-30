@@ -1,6 +1,7 @@
 ---
 title: "Start transcription"
-description: "Use this action to start transcribing all participants in the room. Requires a credit card to unlock. Learn more:  https://docs.daily.co/reference/daily-js/instance-methods/start-transcription#main."
+description: "Use this action to [start transcribing](https://docs.daily.co/reference/daily-js/instance-methods/start-transcription#main) all participants in the room. This feature is pay-as-you-go. Add your [credit card details
+to your Daily account](https://dashboard.daily.co/billing) to enable it."
 ---
 
 import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
@@ -9,35 +10,20 @@ import dailyPlusFlag from "/snippets/dailyPlusFlag.mdx";
 
 <dailyPlusFlag feature="action" />
 
-### General Fields
+### Fields
 
-| **Field**            | **Type** | **Description**                                                                                                                                                                                                  |
-| -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Language**         | Text     | Visit [Deepgram's documentation](https://developers.deepgram.com/docs/models-languages-overview) for available languages                                                                                         |
-| **Model**            | dropdown | The model for transcription see Deepgram's available models [here](https://developers.deepgram.com/docs/model)                                                                                                   |
-| **Profanity Filter** | boolean  | Looks for recognized profanity and converts it to the nearest recognized non-profane word or removes it from the transcript completely. Learn more [here](https://developers.deepgram.com/docs/profanity-filter) |
-| **Punctuate**        | boolean  | Adds punctuation and capitalization to your transcript. Learn more [here](https://developers.deepgram.com/docs/punctuation)                                                                                      |
-| **Endpointing**      | number   | Redaction removes sensitive information from your transcripts. Provide a comma separated string of the entities you would like to redact. Learn more [here](https://developers.deepgram.com/docs/redaction)      |
-| **Redact**           | text     | Redaction removes sensitive information from your transcripts. Provide a comma separated string of the entities you would like to redact. Learn more [here](https://developers.deepgram.com/docs/redaction)      |
-| **label**            | dropdown | Used to render the integration's name in Prebuilt.                                                                                                                                                               |
-| **loading**          | dropdown | Options are `eager` and `lazy`. By default integrations will be loaded lazily.                                                                                                                                   |
-| **location**         | dropdown | Daily supports two different types of custom integrations: 1. Main call area integrations 2. Sidebar integrations                                                                                                |
-| **shared**           | dropdown | When configured, it shares the integration's state with other participants in the call: `true` will share with all other participants `false` won't share `owners` will share with owners only.                  |
-|                      |
-
-### Advanced Settings
-
-Below are optional advanced recording settings to further configure a custom integration with policies
-
-| **Field**           | **Type** | **Description**                                                                                                                                                                                            |
-| ------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **csp**             | text     | Specifies the Content Security Policy for the iframe. Please check browser support before using this property.                                                                                             |
-| **Referrer Policy** | text     | Usage: referrerPolicy: HTMLIFrameElement['referrerPolicy']; Indicates which referrer to send when fetching the frame's resource.                                                                           |
-| **allow**           | text     | Usage: allow: HTMLIFrameElement['allow']; Specifies the feature policy for the iframe.                                                                                                                     |
-| **sandbox**         | text     | Usage: sandbox: string A unique policy for the iframe. Applies extra restrictions to the content in the frame. For more info see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox. |
+| **Field**            | **Type** | **Description**                                                                                                                                                                                         |
+| -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Language**         | Text     | See available languages in [Deepgram's documentation](https://developers.deepgram.com/docs/models-languages-overview).                                                                                  |
+| **Model**            | Dropdown | The model for transcription. View available models in [Deepgram's documentation](https://developers.deepgram.com/docs/model).                                                                           |
+| **Profanity Filter** | Boolean  | Identifies recognized profanity and replaces it with the nearest non-profane word or removes it entirely from the transcript. Learn more [here](https://developers.deepgram.com/docs/profanity-filter). |
+| **Punctuate**        | Boolean  | Adds punctuation and capitalization to the transcript. Learn more [here](https://developers.deepgram.com/docs/punctuation).                                                                             |
+| **Endpointing**      | Number   | Returns transcripts when pauses in speech are detected. The default is 10 milliseconds. Specify the duration in milliseconds. Learn more [here](https://developers.deepgram.com/docs/endpointing).      |
+| **Redact**           | Text     | Removes sensitive information from your transcripts. Provide a comma-separated list of entities you want to redact. Learn more [here](https://developers.deepgram.com/docs/redaction).                  |
+| **Raw Response**     | Boolean  | Includes Deepgram's raw response in the transcription.                                                                                                                                                  |
 
 ### Returned Values
 
-No values are returned by this action
+This action does not return any values.
 
 <dailyBubbleFooter />

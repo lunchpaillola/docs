@@ -108,7 +108,16 @@
                 "bubble/daily/plugin-reference/actions/get-recordings",
                 "bubble/daily/plugin-reference/actions/start-livestream",
                 "bubble/daily/plugin-reference/actions/stop-livestream",
-                "bubble/daily/plugin-reference/actions/toggle-mic"
+                "bubble/daily/plugin-reference/actions/toggle-mic",
+                "bubble/daily/plugin-reference/actions/set-custom-integrations",
+                "bubble/daily/plugin-reference/actions/start-custom-integrations",
+                "bubble/daily/plugin-reference/actions/stop-custom-integrations",
+                "bubble/daily/plugin-reference/actions/batch-set-custom-integrations",
+                "bubble/daily/plugin-reference/actions/start-transcription",
+                "bubble/daily/plugin-reference/actions/stop-transcription",
+                "bubble/daily/plugin-reference/actions/get-transcript",
+                "bubble/daily/plugin-reference/actions/get-transcript-link",
+                "bubble/daily/plugin-reference/actions/delete-transcript"
               ]
             },
             {
@@ -117,7 +126,8 @@
                 "bubble/daily/plugin-reference/data-sources/get-recordings",
                 "bubble/daily/plugin-reference/data-sources/meeting-information",
                 "bubble/daily/plugin-reference/data-sources/room-details",
-                "bubble/daily/plugin-reference/data-sources/list-rooms"
+                "bubble/daily/plugin-reference/data-sources/list-rooms",
+                "bubble/daily/plugin-reference/data-sources/list-transcripts"
               ]
             }
           ]

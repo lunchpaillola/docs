@@ -5,7 +5,11 @@ description: "Use this action to create a new room through Daily's API. Learn mo
 
 import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
 
-### General Fields
+import dailyPlusFlag from "/snippets/dailyPlusFlag.mdx";
+
+# Fields
+
+### General
 
 The following fields are available in this action:
 
@@ -49,7 +53,24 @@ The following fields are only available after adding a credit card to your accou
 | **Max Participants** | Number   | Maximum participants allowed in a room at the same time. Default is 200. Optional.                                    |
 | **Enable Recording** | Dropdown | Determines whether recording is enabled. Options: cloud, local, rtp-tracks, output-byte-stream, cloud-beta. Optional. |
 
-### Returned Values
+### Transcription
+
+<dailyPlusFlag feature="feature" />
+
+| **Field**                 | **Type** | **Description**                                                                                                                                                                                                               |
+| ------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Live Captions UI**      | Boolean  | Sets whether participants can see a closed captions button in the call tray. When set to `yes`, the button appears, and participants can toggle captions locally. When set to `no`, the button is hidden.                     |
+| **Transcription Storage** | Boolean  | Controls whether live transcriptions started with `startTranscription()` are saved as WebVTT files.                                                                                                                           |
+| **Auto Transcription**    | Boolean  | Set to `yes` to enable automatic transcription. Requires additional settings in the [create meeting token](/bubble/daily/plugin-reference/actions/create-meeting-token#Transcription) action and to set the following fields. |
+| **Language**              | Text     | Specifies the transcription language. See available options in [Deepgram's documentation](https://developers.deepgram.com/docs/models-languages-overview).                                                                    |
+| **Model**                 | Dropdown | Selects the model for transcription. View available models in [Deepgram's documentation](https://developers.deepgram.com/docs/model).                                                                                         |
+| **Profanity Filter**      | Boolean  | Filters out recognized profanity, replacing it with a non-profane word or removing it entirely from the transcript. Learn more [here](https://developers.deepgram.com/docs/profanity-filter).                                 |
+| **Punctuate**             | Boolean  | Adds punctuation and capitalization to the transcript. Learn more [here](https://developers.deepgram.com/docs/punctuation).                                                                                                   |
+| **Endpointing**           | Number   | Controls the delay (in milliseconds) for returning transcripts when pauses in speech are detected. The default is 10 milliseconds. Learn more [here](https://developers.deepgram.com/docs/endpointing).                       |
+| **Redact**                | Text     | Removes sensitive information from transcripts. Provide a comma-separated list of entities to redact. Learn more [here](https://developers.deepgram.com/docs/redaction).                                                      |
+| **Raw Response**          | Boolean  | Includes Deepgram's raw response in the transcription data.                                                                                                                                                                   |
+
+# Returned Values
 
 The following values are returned by the action:
 

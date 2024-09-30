@@ -5,7 +5,11 @@ description: "Use this element to enable Daily events in your app. Learn how to 
 
 import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
 
-### Events
+import dailyPlusFlag from "/snippets/dailyPlusFlag.mdx";
+
+# Events
+
+### General
 
 The following events can be emitted during a Daily call:
 
@@ -20,13 +24,23 @@ The following events can be emitted during a Daily call:
 | **recording-stopped**      | Emitted for all participants when a recording stops.                                       |
 | **recording-error**        | Emitted when a recording error occurs.                                                     |
 
-### Element Actions
+### Transcription
+
+<dailyPlusFlag feature="feature" />
+
+| **Event**                 | **Description**                                                         |
+| ------------------------- | ----------------------------------------------------------------------- |
+| **transcription-started** | Emitted for all participants when transcription starts.                 |
+| **transcription-error**   | Emitted for all participants when there has been a transcription error. |
+| **transcription-stopped** | Emitted for all participants when transcription stops.                  |
+
+# Element Actions
 
 | **Action**                        | **Description**                                                                                                                                |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Daily - Begin Event Listening** | Use this action after the Daily - join room action to start listening for events. Not required when using the Daily custom video call element. |
 
-### Exposed States
+# Exposed States
 
 The following states are available to access information about participants and events in a Daily call:
 
