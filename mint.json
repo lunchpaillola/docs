@@ -81,7 +81,8 @@
             "bubble/daily/how-tos/customize-a-recording",
             "bubble/daily/how-tos/enable-breakout-rooms",
             "bubble/daily/how-tos/extend-daily-with-api-calls",
-            "bubble/daily/how-tos/add-custom-integrations"
+            "bubble/daily/how-tos/add-custom-integrations",
+            "bubble/daily/how-tos/transcribe-a-meeting"
           ]
         },
         {
@@ -110,7 +111,7 @@
                 "bubble/daily/plugin-reference/actions/start-livestream",
                 "bubble/daily/plugin-reference/actions/stop-livestream",
                 "bubble/daily/plugin-reference/actions/toggle-mic",
-                "bubble/daily/plugin-reference/actions/set-custom-integrations",
+                "bubble/daily/plugin-reference/actions/set-custom-integration",
                 "bubble/daily/plugin-reference/actions/start-custom-integrations",
                 "bubble/daily/plugin-reference/actions/stop-custom-integrations",
                 "bubble/daily/plugin-reference/actions/batch-set-custom-integrations",
