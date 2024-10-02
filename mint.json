@@ -54,21 +54,6 @@
       "pages": ["bubble/overview"]
     },
     {
-      "group": "SmartSuite",
-      "pages": [
-        "bubble/smartsuite/getting-started",
-        {
-          "group": "How to",
-          "pages": [
-            "bubble/smartsuite/how-tos/get-record-structure",
-            "bubble/smartsuite/how-tos/display-records"
-          ]
-        },
-        "bubble/smartsuite/plugin-reference",
-        "bubble/smartsuite/changelog"
-      ]
-    },
-    {
       "group": "Daily Video Conferencing",
       "pages": [
         "bubble/daily/getting-started",
@@ -172,6 +157,21 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "group": "SmartSuite",
+      "pages": [
+        "bubble/smartsuite/getting-started",
+        {
+          "group": "How to",
+          "pages": [
+            "bubble/smartsuite/how-tos/get-record-structure",
+            "bubble/smartsuite/how-tos/display-records"
+          ]
+        },
+        "bubble/smartsuite/plugin-reference",
+        "bubble/smartsuite/changelog"
       ]
     },
     {
