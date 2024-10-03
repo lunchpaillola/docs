@@ -67,6 +67,7 @@
             "bubble/daily/how-tos/enable-breakout-rooms",
             "bubble/daily/how-tos/extend-daily-with-api-calls",
             "bubble/daily/how-tos/add-custom-integrations",
+            "bubble/daily/how-tos/add-custom-buttons",
             "bubble/daily/how-tos/transcribe-a-meeting"
           ]
         },
@@ -104,7 +105,8 @@
                 "bubble/daily/plugin-reference/actions/stop-transcription",
                 "bubble/daily/plugin-reference/actions/get-transcript",
                 "bubble/daily/plugin-reference/actions/get-transcript-link",
-                "bubble/daily/plugin-reference/actions/delete-transcript"
+                "bubble/daily/plugin-reference/actions/delete-transcript",
+                "bubble/daily/plugin-reference/actions/update-custom-tray-buttons"
               ]
             },
             {

@@ -7,6 +7,12 @@ import dailyBubbleFooter from "/snippets/dailyBubbleFooter.mdx";
 
 import dailyPlusFlag from "/snippets/dailyPlusFlag.mdx";
 
+# Element Actions
+
+| **Action**                        | **Description**                                                                                                                                |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Daily - Begin Event Listening** | Use this action after the Daily - join room action to start listening for events. Not required when using the Daily custom video call element. |
+
 # Events
 
 ### General
@@ -24,7 +30,7 @@ The following events can be emitted during a Daily call:
 | **recording-stopped**      | Emitted for all participants when a recording stops.                                       |
 | **recording-error**        | Emitted when a recording error occurs.                                                     |
 
-### Transcription
+### Plus Events
 
 <dailyPlusFlag feature="feature" />
 
@@ -33,12 +39,6 @@ The following events can be emitted during a Daily call:
 | **transcription-started** | Emitted for all participants when transcription starts.                 |
 | **transcription-error**   | Emitted for all participants when there has been a transcription error. |
 | **transcription-stopped** | Emitted for all participants when transcription stops.                  |
-
-# Element Actions
-
-| **Action**                        | **Description**                                                                                                                                |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Daily - Begin Event Listening** | Use this action after the Daily - join room action to start listening for events. Not required when using the Daily custom video call element. |
 
 # Exposed States
 
@@ -50,12 +50,13 @@ The following states are available to access information about participants and 
 | **current participant user ids** | List     | A list of user IDs for all current participants in the call. |
 | **active speaker**               | Text     | The user ID of the active speaker in the call.               |
 
-### Transcription
+### Plus States
 
 <dailyPlusFlag feature="feature" />
 
 | **State**            | **Type** | **Description**                                                     |
 | -------------------- | -------- | ------------------------------------------------------------------- |
 | **Transcription ID** | Text     | The unique ID assigned to the transcription session when it starts. |
+| **Custom Button ID** | Text     | The ID of the custom button that was clicked.                       |
 
 <dailyBubbleFooter />
