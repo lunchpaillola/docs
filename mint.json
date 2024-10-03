@@ -60,15 +60,30 @@
         {
           "group": "How to",
           "pages": [
-            "bubble/daily/how-tos/use-daily-events",
-            "bubble/daily/how-tos/owner-only-broadcast",
-            "bubble/daily/how-tos/set-up-livestream",
-            "bubble/daily/how-tos/customize-a-recording",
-            "bubble/daily/how-tos/enable-breakout-rooms",
-            "bubble/daily/how-tos/extend-daily-with-api-calls",
-            "bubble/daily/how-tos/add-custom-integrations",
-            "bubble/daily/how-tos/add-custom-buttons",
-            "bubble/daily/how-tos/transcribe-a-meeting"
+            {
+              "group": "Broadcast and live stream",
+              "pages": [
+                "bubble/daily/how-tos/owner-only-broadcast",
+                "bubble/daily/how-tos/set-up-livestream"
+              ]
+            },
+            {
+              "group": "Customize the call",
+              "pages": [
+                "bubble/daily/how-tos/use-daily-events",
+                "bubble/daily/how-tos/extend-daily-with-api-calls",
+                "bubble/daily/how-tos/enable-breakout-rooms",
+                "bubble/daily/how-tos/add-custom-integrations",
+                "bubble/daily/how-tos/add-custom-buttons"
+              ]
+            },
+            {
+              "group": "Record and transcribe",
+              "pages": [
+                "bubble/daily/how-tos/customize-a-recording",
+                "bubble/daily/how-tos/transcribe-a-meeting"
+              ]
+            }
           ]
         },
         {
