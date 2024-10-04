@@ -160,7 +160,7 @@
                 "bubble/daily/plugin-reference/actions/update-webhook",
                 "bubble/daily/plugin-reference/actions/get-webhook",
                 "bubble/daily/plugin-reference/actions/get-webhooks",
-                "bubble/daily/plugin-reference/actions/delete-webhooks"
+                "bubble/daily/plugin-reference/actions/delete-webhook"
               ]
             },
             {
