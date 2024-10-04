@@ -90,48 +90,88 @@
           "group": "Reference",
           "pages": [
             {
-              "group": "Elements",
+              "group": "Events",
               "pages": ["bubble/daily/plugin-reference/elements/daily-events"]
             },
             {
-              "group": "Actions",
+              "group": "Rooms",
               "pages": [
                 "bubble/daily/plugin-reference/actions/create-room",
                 "bubble/daily/plugin-reference/actions/update-room",
                 "bubble/daily/plugin-reference/actions/delete-room",
                 "bubble/daily/plugin-reference/actions/join-room",
                 "bubble/daily/plugin-reference/actions/leave-room",
-                "bubble/daily/plugin-reference/actions/create-meeting-token",
+                "bubble/daily/plugin-reference/data-sources/room-details",
+                "bubble/daily/plugin-reference/data-sources/list-rooms",
+                "bubble/daily/plugin-reference/data-sources/meeting-information",
+                "bubble/daily/plugin-reference/actions/get-presence"
+              ]
+            },
+            {
+              "group": "Meeting tokens",
+              "pages": [
+                "bubble/daily/plugin-reference/actions/create-meeting-token"
+              ]
+            },
+            {
+              "group": "Audio management",
+              "pages": [
                 "bubble/daily/plugin-reference/actions/update-participant-audio",
-                "bubble/daily/plugin-reference/actions/get-presence",
+                "bubble/daily/plugin-reference/actions/toggle-mic"
+              ]
+            },
+            {
+              "group": "Recording",
+              "pages": [
                 "bubble/daily/plugin-reference/actions/start-recording",
                 "bubble/daily/plugin-reference/actions/update-recording",
                 "bubble/daily/plugin-reference/actions/stop-recording",
                 "bubble/daily/plugin-reference/actions/get-recording-link",
-                "bubble/daily/plugin-reference/actions/get-recordings",
+                "bubble/daily/plugin-reference/data-sources/get-recordings",
+                "bubble/daily/plugin-reference/actions/get-recordings"
+              ]
+            },
+            {
+              "group": "Live streaming",
+              "pages": [
                 "bubble/daily/plugin-reference/actions/start-livestream",
-                "bubble/daily/plugin-reference/actions/stop-livestream",
-                "bubble/daily/plugin-reference/actions/toggle-mic",
-                "bubble/daily/plugin-reference/actions/set-custom-integration",
-                "bubble/daily/plugin-reference/actions/start-custom-integrations",
-                "bubble/daily/plugin-reference/actions/stop-custom-integrations",
-                "bubble/daily/plugin-reference/actions/batch-set-custom-integrations",
-                "bubble/daily/plugin-reference/actions/start-transcription",
-                "bubble/daily/plugin-reference/actions/stop-transcription",
-                "bubble/daily/plugin-reference/actions/get-transcript",
-                "bubble/daily/plugin-reference/actions/get-transcript-link",
-                "bubble/daily/plugin-reference/actions/delete-transcript",
+                "bubble/daily/plugin-reference/actions/stop-livestream"
+              ]
+            },
+            {
+              "group": "Custom tray buttons",
+              "pages": [
                 "bubble/daily/plugin-reference/actions/update-custom-tray-buttons"
               ]
             },
             {
-              "group": "Data sources",
+              "group": "Custom integrations",
               "pages": [
-                "bubble/daily/plugin-reference/data-sources/get-recordings",
-                "bubble/daily/plugin-reference/data-sources/meeting-information",
-                "bubble/daily/plugin-reference/data-sources/room-details",
-                "bubble/daily/plugin-reference/data-sources/list-rooms",
-                "bubble/daily/plugin-reference/data-sources/list-transcripts"
+                "bubble/daily/plugin-reference/actions/set-custom-integration",
+                "bubble/daily/plugin-reference/actions/start-custom-integrations",
+                "bubble/daily/plugin-reference/actions/stop-custom-integrations",
+                "bubble/daily/plugin-reference/actions/batch-set-custom-integrations"
+              ]
+            },
+            {
+              "group": "Webhooks",
+              "pages": [
+                "bubble/daily/plugin-reference/actions/create-webhook",
+                "bubble/daily/plugin-reference/actions/update-webhook",
+                "bubble/daily/plugin-reference/actions/get-webhook",
+                "bubble/daily/plugin-reference/actions/get-webhooks",
+                "bubble/daily/plugin-reference/actions/delete-webhooks"
+              ]
+            },
+            {
+              "group": "Transcription",
+              "pages": [
+                "bubble/daily/plugin-reference/actions/start-transcription",
+                "bubble/daily/plugin-reference/actions/stop-transcription",
+                "bubble/daily/plugin-reference/actions/get-transcript",
+                "bubble/daily/plugin-reference/data-sources/list-transcripts",
+                "bubble/daily/plugin-reference/actions/get-transcript-link",
+                "bubble/daily/plugin-reference/actions/delete-transcript"
               ]
             }
           ]
