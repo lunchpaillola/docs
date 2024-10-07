@@ -4,6 +4,7 @@ description: "Use this element  to enable real-time presence tracking in your Bu
 ---
 
 import liveblocksFooter from "/snippets/liveblocksFooter.mdx";
+import liveblocksPlus from "/snippets/liveblocksPlus.mdx";
 
 ### Exposed States
 
@@ -29,6 +30,12 @@ The following events are triggered by changes in connection status, room updates
 | **Lost Connection** | Triggers when a lost connection event occurs.        |
 | **error**           | Triggers when an error occurs in the element.        |
 | **New Room ID**     | Triggers when the room ID changes while in the room. |
+
+<liveblocksPlus feature="event" />
+
+| **Event**           | **Description**                             |
+| ------------------- | ------------------------------------------- |
+| **Broadcast event** | Triggers when a new broadcast event occurs. |
 
 ### Actions
 
@@ -63,6 +70,17 @@ Here are the actions available for the **Liveblocks Presence** plugin element. T
 #### **Leave**
 
 **Description:** leave a room and unsubscribe from events
+
+#### Broadcast Event
+
+**Description:** Broadcast an event client-side, which requires being in an active room.
+
+<liveblocksPlus feature="action" />
+
+| **Field**   | **Type** | **Description**                                 |
+| ----------- | -------- | ----------------------------------------------- |
+| **Type**    | Text     | The type of event being broadcasted.            |
+| **Message** | Text     | The message payload that accompanies the event. |
 
 ---
 

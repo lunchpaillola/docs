@@ -209,7 +209,8 @@
                 "bubble/liveblocks/plugin-reference/actions/get-active-users",
                 "bubble/liveblocks/plugin-reference/actions/get-room",
                 "bubble/liveblocks/plugin-reference/actions/update-room",
-                "bubble/liveblocks/plugin-reference/actions/update-room-id"
+                "bubble/liveblocks/plugin-reference/actions/update-room-id",
+                "bubble/liveblocks/plugin-reference/actions/broadcast-event"
               ]
             }
           ]
