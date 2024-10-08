@@ -1,0 +1,32 @@
+---
+title: "Get threads"
+description: "Use this action to return a list of thread IDs found inside a room."
+---
+
+import liveblocksFooter from "/snippets/liveblocksFooter.mdx";
+import liveblocksPlus from "/snippets/liveblocksPlus.mdx";
+
+<liveblocksPlus feature="action" />
+
+### Fields
+
+The following fields are available in this action:
+
+| **Field**   | **Type** | **Description**                                             |
+| ----------- | -------- | ----------------------------------------------------------- |
+| **Room ID** | Text     | The unique identifier of the room to retrieve threads from. |
+
+### Returned Values
+
+The following values are returned by the action:
+
+| **Value**      | **Type**    | **Description**                                            |
+| -------------- | ----------- | ---------------------------------------------------------- |
+| **Thread IDs** | Text (list) | A list of thread IDs found in the specified room.          |
+| **Error**      | Boolean     | Indicates whether an error occurred during the action.     |
+| **Message**    | Text        | Displays an error or success message.                      |
+| **Status**     | Number      | The error code if the action failed, or 200 if successful. |
+
+---
+
+<liveblocksFooter />
