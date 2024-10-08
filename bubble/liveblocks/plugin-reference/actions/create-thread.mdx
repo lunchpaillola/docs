@@ -1,0 +1,39 @@
+---
+title: "Create thread"
+description: "Use this action to create a thread."
+---
+
+import liveblocksFooter from "/snippets/liveblocksFooter.mdx";
+import liveblocksPlus from "/snippets/liveblocksPlus.mdx";
+
+<liveblocksPlus feature="action" />
+
+### Fields
+
+The following fields are available in this action:
+
+| **Field**   | **Type** | **Description**                                        |
+| ----------- | -------- | ------------------------------------------------------ |
+| **Room ID** | Text     | The ID of the room where the thread will be created.   |
+| **User ID** | Text     | The unique identifier of the user creating the thread. |
+| **Text**    | Text     | The comment content to be added to the thread.         |
+
+### Returned Values
+
+The following values are returned by the action:
+
+| **Value**              | **Type**  | **Description**                                                 |
+| ---------------------- | --------- | --------------------------------------------------------------- |
+| **Type**               | Text      | The type of the created object, usually "thread".               |
+| **Thread ID**          | Text      | The unique identifier of the created thread.                    |
+| **Room ID**            | Text      | The ID of the room where the thread was created.                |
+| **Comment ID**         | Text      | The unique identifier of the created comment within the thread. |
+| **Comment User ID**    | Text      | The ID of the user who created the comment.                     |
+| **Comment Created At** | Date/Time | The timestamp of when the comment was created.                  |
+| **Error**              | Boolean   | Indicates whether an error occurred during the action.          |
+| **Message**            | Text      | Displays an error message if one occurred.                      |
+| **Status**             | Number    | The error code if the action failed.                            |
+
+---
+
+<liveblocksFooter />
