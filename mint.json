@@ -243,6 +243,15 @@
                 "bubble/liveblocks/plugin-reference/actions/add-comment-reaction",
                 "bubble/liveblocks/plugin-reference/actions/remove-comment-reaction"
               ]
+            },
+            {
+              "group": "Notifications",
+              "pages": [
+                "bubble/liveblocks/plugin-reference/actions/get-all-inbox-notifications",
+                "bubble/liveblocks/plugin-reference/actions/get-inbox-notification",
+                "bubble/liveblocks/plugin-reference/actions/delete-all-inbox-notifications",
+                "bubble/liveblocks/plugin-reference/actions/delete-inbox-notification"
+              ]
             }
           ]
         }
