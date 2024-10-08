@@ -232,6 +232,17 @@
                 "bubble/liveblocks/plugin-reference/actions/delete-thread",
                 "bubble/liveblocks/plugin-reference/actions/get-thread-participants"
               ]
+            },
+            {
+              "group": "Comments",
+              "pages": [
+                "bubble/liveblocks/plugin-reference/actions/create-comment",
+                "bubble/liveblocks/plugin-reference/actions/edit-comment",
+                "bubble/liveblocks/plugin-reference/actions/get-comment",
+                "bubble/liveblocks/plugin-reference/actions/delete-comment",
+                "bubble/liveblocks/plugin-reference/actions/add-comment-reaction",
+                "bubble/liveblocks/plugin-reference/actions/remove-comment-reaction"
+              ]
             }
           ]
         }
