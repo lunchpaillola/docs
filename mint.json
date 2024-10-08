@@ -201,18 +201,36 @@
               ]
             },
             {
-              "group": "Actions",
+              "group": "Users",
               "pages": [
                 "bubble/liveblocks/plugin-reference/actions/authorize-user",
+                "bubble/liveblocks/plugin-reference/actions/get-active-users"
+              ]
+            },
+            {
+              "group": "Rooms",
+              "pages": [
                 "bubble/liveblocks/plugin-reference/actions/create-room",
                 "bubble/liveblocks/plugin-reference/actions/delete-room",
-                "bubble/liveblocks/plugin-reference/actions/get-active-users",
                 "bubble/liveblocks/plugin-reference/actions/get-room",
                 "bubble/liveblocks/plugin-reference/actions/update-room",
-                "bubble/liveblocks/plugin-reference/actions/update-room-id",
-                "bubble/liveblocks/plugin-reference/actions/broadcast-event",
+                "bubble/liveblocks/plugin-reference/actions/update-room-id"
+              ]
+            },
+            {
+              "group": "Events",
+              "pages": [
+                "bubble/liveblocks/plugin-reference/actions/broadcast-event"
+              ]
+            },
+            {
+              "group": "Threads",
+              "pages": [
                 "bubble/liveblocks/plugin-reference/actions/create-thread",
-                "bubble/liveblocks/plugin-reference/actions/get-threads"
+                "bubble/liveblocks/plugin-reference/actions/get-thread",
+                "bubble/liveblocks/plugin-reference/actions/get-threads",
+                "bubble/liveblocks/plugin-reference/actions/delete-thread",
+                "bubble/liveblocks/plugin-reference/actions/get-thread-participants"
               ]
             }
           ]
