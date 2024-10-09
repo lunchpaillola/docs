@@ -273,6 +273,16 @@
       ]
     },
     {
+      "group": "Twilio SMS",
+      "pages": [
+        "bubble/twilio-sms/getting-started",
+        {
+          "group": "Reference",
+          "pages": ["bubble/twilio-sms/send-sms"]
+        }
+      ]
+    },
+    {
       "group": "Components for Adalo",
       "pages": ["adalo/overview"]
     },
