@@ -139,9 +139,10 @@
               ]
             },
             {
-              "group": "Custom tray buttons",
+              "group": "Custom buttons and UI",
               "pages": [
-                "bubble/daily/plugin-reference/actions/update-custom-tray-buttons"
+                "bubble/daily/plugin-reference/actions/update-custom-tray-buttons",
+                "bubble/daily/plugin-reference/actions/set-sidebar-view"
               ]
             },
             {
