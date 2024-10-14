@@ -294,6 +294,16 @@
       ]
     },
     {
+      "group": "Player style audio",
+      "pages": [
+        "bubble/player-style-audio/getting-started",
+        {
+          "group": "Reference",
+          "pages": ["bubble/player-style-audio/audio-element"]
+        }
+      ]
+    },
+    {
       "group": "Components for Adalo",
       "pages": ["adalo/overview"]
     },
