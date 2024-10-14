@@ -284,6 +284,16 @@
       ]
     },
     {
+      "group": "Player style video",
+      "pages": [
+        "bubble/player-style-video/getting-started",
+        {
+          "group": "Reference",
+          "pages": ["bubble/player-style-video/video-element"]
+        }
+      ]
+    },
+    {
       "group": "Components for Adalo",
       "pages": ["adalo/overview"]
     },
