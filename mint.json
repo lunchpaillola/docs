@@ -135,8 +135,9 @@
             {
               "group": "Live streaming",
               "pages": [
-                "bubble/daily/plugin-reference/actions/start-livestream",
-                "bubble/daily/plugin-reference/actions/stop-livestream"
+                "bubble/daily/plugin-reference/actions/start-join-live-stream",
+                "bubble/daily/plugin-reference/actions/start-live-stream",
+                "bubble/daily/plugin-reference/actions/stop-live-stream"
               ]
             },
             {
