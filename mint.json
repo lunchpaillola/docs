@@ -328,5 +328,10 @@
     "x": "https://x.com/lunchpaillabs",
     "github": "https://github.com/lunchpaillola",
     "linkedin": "https://www.linkedin.com/company/lunchpaillabs"
+  },
+  "analytics": {
+    "posthog": {
+      "apiKey": "phc_gZChBAgZ0p5neNnKxErSmNT71BHWZu1rO56GC905aG1"
+    }
   }
 }
